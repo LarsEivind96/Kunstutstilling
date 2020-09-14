@@ -19,17 +19,12 @@ function App() {
     setSideDrawerOpen(false);
   };
 
-  let backdrop;
-  if (sideDrawerOpen) {
-    backdrop = <Backdrop click={backdropClickHandler} />;
-  }
-
   return (
     <div className="App">
       <div className="Container">
         <Toolbar drawerClickHandler={drawerToggleClickHandler} />
         <SideDrawer show={sideDrawerOpen} />
-        {backdrop}
+        {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
       </div>
       <Router>
         <Switch>

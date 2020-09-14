@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #521751;
+  background-image: linear-gradient(to right, #3a90cb, #2cdad0);
   height: 56px;
 }
 
