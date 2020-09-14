@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 @keyframes App-logo-spin {
@@ -35,6 +35,25 @@
 
 .SvgCard {
   background-color: white;
+  width: 60vw;
+  height: 60vh;
   display: grid;
-  grid-row: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+}
+
+.SvgContainer {
+  background-color: #280c34;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TextContainer {
+  background-color: #280c34;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
