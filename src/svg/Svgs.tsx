@@ -1,4 +1,5 @@
 import test from "./test.svg";
+import MindTrick from "./MindTrick.svg";
 
 const Svgs = [
   {
@@ -7,8 +8,8 @@ const Svgs = [
     favorite: false,
   },
   {
-    name: "test2",
-    svg: test,
+    name: "Mind Trick",
+    svg: MindTrick,
     favorite: false,
   },
 ];
