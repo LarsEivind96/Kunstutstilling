@@ -8,7 +8,7 @@ const Svgs = [
     favorite: false,
   },
   {
-    name: "Mind Trick",
+    name: "Crazy circle illusion",
     svg: MindTrick,
     favorite: false,
   },

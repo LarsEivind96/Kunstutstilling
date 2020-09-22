@@ -12,7 +12,7 @@
         <path d="M200 10 L200 290 Z" transform="rotate(202.5, 200, 150)" />
         <path d="M200 10 L200 290 Z" transform="rotate(360, 200, 150)" />
       </g>
-      <animate attributeName='visibility' begin='1s' from='hidden' to='visible' dur='8s' repeatCount='indefinite' />
+      <animate attributeName='visibility' from='hidden' to='visible' dur='10s' repeatCount='indefinite' />
     </g>
     <g>
       <g fill='red'>
