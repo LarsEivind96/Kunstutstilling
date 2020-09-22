@@ -7,7 +7,11 @@ import "../TempSVG/temp.svg";
 const gallerygrid = (props: any) => (
   <div className="gallerycontainer">
     <div className="galleryitem">
-      <div className="galleryimage"></div>
+      <img
+        height="80%"
+        width="70%"
+        src="https://thumbs.dreamstime.com/z/online-robber-17098197.jpg"
+      />
       svg1
     </div>
     <div className="galleryitem">
