@@ -2,6 +2,7 @@ import React from "react";
 
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import "./Toolbar.css";
+import AudioPlayer from "../AudioPlayer/AudioPlayer";
 
 const toolbar = (props: any) => (
   <header className="toolbar">
@@ -13,17 +14,7 @@ const toolbar = (props: any) => (
         <a href="/">LOGO BUDDY</a>
       </div>
       <div className="spacer" />
-      <div>
-        <audio controls autoPlay>
-          <source src="../../pages/Time.mp3" type="audio/mpeg" />
-          <source src="src/music/DayOne.mp3" type="audio/mpeg" />
-          <source
-            src="C:/Users/larse/Documents/Skole/Webutvikling - IT2810/prosjekt2/src/music/Time.mp3"
-            type="audio/mpeg"
-          />
-          Your browser does not support the audio tag.
-        </audio>
-      </div>
+      <AudioPlayer />
       <div className="toolbar_navigation-items">
         <ul>
           <li>

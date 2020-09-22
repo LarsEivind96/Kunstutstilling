@@ -1,0 +1,26 @@
+audio {
+  width: 110px;
+  height: 25px;
+}
+
+.audioPlayer {
+  padding-right: 5px;
+}
+
+audio::-webkit-media-controls-panel {
+  -webkit-justify-content: flex-end;
+  height: 25px;
+}
+
+/* Removes the timeline */
+audio::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
