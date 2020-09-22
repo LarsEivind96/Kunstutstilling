@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
+import Gallery from "./pages/Gallery";
 
 function App() {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -30,6 +31,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/gallery" component={Gallery} />
         </Switch>
       </Router>
     </div>
