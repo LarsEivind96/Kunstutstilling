@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "./SvgCard.css";
 
 interface Props {
   currentSvg: { name: string; svg: string; favorite: boolean };
