@@ -46,8 +46,9 @@ function App() {
         <Router>
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/:index" exact component={Home} />
             <Route path="/about" component={About} />
+            {/* Make sure this route is at the bottom */}
+            <Route path="/:index" exact component={Home} />
           </Switch>
         </Router>
       </div>
