@@ -33,8 +33,7 @@ function App() {
       <div
         className="App"
         style={{
-          background:
-            "linear-gradient(to left, " + context.theme.primary + ", " + context.theme.linGradH2 + ")",
+          background: "linear-gradient(to left, " + context.theme.primary + ", " + context.theme.linGradH2 + ")",
         }}
       >
         <div className="Container" style={{ background: "white" }}>
@@ -47,6 +46,7 @@ function App() {
         <Router>
           <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/:index" exact component={Home} />
             <Route path="/about" component={About} />
           </Switch>
         </Router>

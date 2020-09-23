@@ -29,6 +29,28 @@
   overflow-y: scroll;
 }
 
+.FavButton {
+  width: 100%;
+  height: 100%;
+  border-radius: calc(2px + 0.8vw);
+  background-color: transparent;
+  color: white;
+  border: 2px solid #4caf50;
+  padding: 1vw 0.5vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 0.5vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.FavButton:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
 @media screen and (max-width: 550px) {
   .SvgCard {
     grid-template-rows: 48% 48%;

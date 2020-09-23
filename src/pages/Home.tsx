@@ -3,12 +3,20 @@ import "../App.css";
 import SvgCard from "../components/SvgCard/SvgCard";
 import Svgs from "../svg/Svgs";
 
-function Home() {
-  const chooseRandSvg = () => {
+function Home(props) {
+  const chooseSvg = () => {
+    const favIndex = localStorage.getItem("favorite");
+    if (props.match.params.index) {
+      return Svgs[parseInt(props.match.params.index)];
+    } else if (favIndex) {
+      return Svgs[parseInt(favIndex)];
+    }
+
     let index = Math.floor(Math.random() * Math.floor(Svgs.length));
     return Svgs[index];
   };
-  const currentSvg = chooseRandSvg();
+
+  const currentSvg = chooseSvg();
 
   return (
     <div className="HomeContainer">
