@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+
+    <g class="first-group" transform="translate(115 65)">
+        <rect class="first-rect-group" x="0" y="0" width="80" height="80" stroke="white" fill="none">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 40 40" to="360 40 40" dur="7s" repeatCount="indefinite"/>
+        </rect>
+        <rect class="first-rect-group" x="90" y="0" width="80" height="80" stroke="white" fill="none">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 130 40" to="360 130 40" dur="7s" repeatCount="indefinite"/>
+        </rect>
+        <rect class="first-rect-group" x="90" y="90" width="80" height="80" stroke="white" fill="none"> 
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 130 130" to="360 130 130" dur="7s" repeatCount="indefinite"/>
+        </rect>
+        <rect class="first-rect-group" x="0" y="90" width="80" height="80" stroke="white" fill="none">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 40 130" to="360 40 130" dur="7s" repeatCount="indefinite"/>
+        </rect>
+    </g>
+
+    <g id="second-group" transform="translate(115 65) rotate(45 85 85)">
+        <rect class="second-rect-group" x="0" y="0" width="80" height="80" stroke="white" fill="none">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 40 40" to="-360 40 40" dur="7s" repeatCount="indefinite"/>
+        </rect>
+        <rect class="second-rect-group" x="90" y="0" width="80" height="80" stroke="white" fill="none">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 130 40" to="-360 130 40" dur="7s" repeatCount="indefinite"/>
+        </rect>
+        <rect class="second-rect-group" x="90" y="90" width="80" height="80" stroke="white" fill="none"> 
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 130 130" to="-360 130 130" dur="7s" repeatCount="indefinite"/>
+        </rect>
+        <rect class="second-rect-group" x="0" y="90" width="80" height="80" stroke="white" fill="none">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 40 130" to="-360 40 130" dur="7s" repeatCount="indefinite"/>
+        </rect>
+
+    </g>
+
+      
+
+
+    <!-- CSS -->
+    <style>
+
+    .first-rect-group {animation: group-one 7s linear infinite;}
+    @keyframes group-one {
+        0% {
+            stroke: red;
+        }
+        33% {
+            stroke: green;
+        }
+        66% {
+            stroke: blue
+        }
+        100% {
+            stroke: red;
+        }
+    }
+
+    .second-rect-group {animation: group-two 7s linear infinite;}
+    @keyframes group-two {
+        0% {
+            stroke: blue;
+        }
+        33% {
+            stroke: green;
+        }
+        66% {
+            stroke: red
+        }
+        100% {
+            stroke: blue;
+        }
+    }
+     
+    </style>
+</svg>
