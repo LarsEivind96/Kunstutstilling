@@ -25,7 +25,6 @@ function App() {
   const context: AppContextInterface = {
     theme: theme,
     toggleTheme: (val) => setTheme(val),
-    // setTheme((theme: any) => theme); //theme = theme === themes.dark ? themes.beach : themes.dark));
   };
 
   return (

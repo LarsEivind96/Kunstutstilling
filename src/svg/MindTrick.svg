@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-    <circle cx="200" cy="150" r="146" fill='black'/>
+    <circle cx="200" cy="150" r="146" fill='rgba(30, 30, 30, 0.5)' stroke='silver'/>
     <g visibility='hidden'>
       <g fill="#61DAFB" stroke='#61DAFB' stroke-width='2' >
         <path d="M200 10 L200 290 Z" transform="rotate(45, 200, 150)" />
