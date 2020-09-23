@@ -1,5 +1,4 @@
 .SvgCard {
-  background-color: var(--gradient-color1);
   display: grid;
   width: auto;
   grid-template-columns: 48% 48%;
@@ -7,13 +6,12 @@
   padding: 1%;
   padding-right: 2.2%;
   justify-content: space-between;
-  border: calc(2px + 0.4vw) solid black;
+  border: calc(2px + 0.4vw) solid;
   border-radius: calc(2px + 0.8vw);
   box-shadow: 0 7vw 2vw -5vw rgba(0, 0, 0, 0.5);
 }
 
 .SvgCard > div {
-  background-color: #280c34;
   display: flex;
   align-items: center;
   justify-content: center;
