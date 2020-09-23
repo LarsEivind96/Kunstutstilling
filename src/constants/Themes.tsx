@@ -21,11 +21,18 @@ export const themes = {
     linGradH2: "#111111",
   },
   beach: {
-    primary: "yellow",
-    secondary: "#339863",
-    text: "blue",
+    primary: "#c2b280",
+    secondary: "#0077be",
+    text: "#dce5eb",
     linGradH1: "red",
-    linGradH2: "orange",
+    linGradH2: "white",
+  },
+  crazy: {
+    primary: "yellow",
+    secondary: "purple",
+    text: "red",
+    linGradH1: "pink",
+    linGradH2: "blue",
   },
 };
 

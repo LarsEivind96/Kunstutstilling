@@ -7,6 +7,8 @@ import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import { ThemeContext, themes, AppContextInterface } from "./constants/Themes";
+import AudioPlayer from "./components/AudioPlayer/AudioPlayer";
+import ThemeButtonContainer from "./components/ThemeButton/ThemeButtonContainer";
 
 function App() {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -35,10 +37,12 @@ function App() {
             "linear-gradient(to left, " + context.theme.primary + ", " + context.theme.linGradH2 + ")",
         }}
       >
-        <div className="Container">
+        <div className="Container" style={{ background: "white" }}>
           <Toolbar drawerClickHandler={drawerToggleClickHandler} />
           <SideDrawer show={sideDrawerOpen} />
           {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
+          <AudioPlayer />
+          <ThemeButtonContainer />
         </div>
         <Router>
           <Switch>

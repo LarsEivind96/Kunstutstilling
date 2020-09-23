@@ -31,11 +31,7 @@ const toolbar = (props: any) => (
               </a>
             </div>
             <div className="spacer" />
-            <div className="spacer">
-              <ThemeButton theme={themes.dark} name="dark" />
-              <ThemeButton theme={themes.space} name="space" />
-              <ThemeButton theme={themes.beach} name="beach" />
-            </div>
+            <div className="spacer"></div>
             <div className="spacer" />
 
             <AudioPlayer />
