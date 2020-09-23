@@ -37,7 +37,10 @@
     <!-- CSS -->
     <style>
 
-    .first-rect-group {animation: group-one 7s linear infinite;}
+    .first-rect-group {
+        animation: group-one 7s linear infinite;
+        stroke-width: 3;
+    }
     @keyframes group-one {
         0% {
             stroke: red;
@@ -53,7 +56,10 @@
         }
     }
 
-    .second-rect-group {animation: group-two 7s linear infinite;}
+    .second-rect-group {
+        animation: group-two 7s linear infinite;
+        stroke-width: 3;
+    }
     @keyframes group-two {
         0% {
             stroke: blue;
