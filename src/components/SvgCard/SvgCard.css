@@ -13,8 +13,6 @@
 
 .SvgCard > div {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30vw;
   height: 22.5vw;
 }
@@ -22,6 +20,13 @@
 .Svg {
   width: 100%;
   height: 100%;
+}
+
+.ImageText {
+  height: 100%;
+  width: 100%;
+  padding: 0% 4% 0% 4%;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 550px) {
