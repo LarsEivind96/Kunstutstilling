@@ -11,11 +11,11 @@ const SvgCard = ({ currentSvg }: Props) => {
 
   const fetchTestText = async () => {
     setIsLoading(true);
-    await fetch("https://poetrydb.org/random")
+    await fetch("https://poetrydb.org/random,linecount/1;10")
       .then((res) => res.json())
       .then(
         (result) => {
-          setFetchedText(result.lines.reduce((prev, curr, index) => [prev, <br key={index} />, curr]));
+          setFetchedText(result[0].lines.reduce((prev, curr, index) => [prev, <br key={index} />, curr]));
         },
         (error) => {
           console.log(error);
