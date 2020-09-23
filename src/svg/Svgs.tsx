@@ -5,11 +5,6 @@ import RectAnimation from "./RectAnimation.svg";
 
 const Svgs = [
   {
-    name: "test",
-    svg: test,
-    favorite: false,
-  },
-  {
     name: "Crazy circle illusion",
     svg: MindTrick,
     favorite: false,
