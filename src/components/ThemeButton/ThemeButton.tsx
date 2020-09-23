@@ -2,16 +2,19 @@ import React from "react";
 import { ThemeContext, themes } from "../../constants/Themes";
 
 interface props {
-  onClick: any;
+  theme: any;
+  name: string;
 }
 
-function ThemeButton() {
+function ThemeButton(props: props) {
   return (
     <ThemeContext.Consumer>
       {(appContext) =>
         appContext && (
-          <div style={{ backgroundColor: appContext.themes.dark.primary }}>
-            Name: {appContext.themes.dark.primary}
+          <div>
+            <button id="button" onClick={() => appContext.toggleTheme(props.theme)}>
+              {props.name}
+            </button>
           </div>
         )
       }

@@ -10,7 +10,7 @@ import { ThemeContext, themes, AppContextInterface } from "./constants/Themes";
 
 function App() {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
-  const [theme, setTheme] = useState(themes.beach);
+  const [theme, setTheme] = useState(themes.dark);
 
   const drawerToggleClickHandler = () => {
     setSideDrawerOpen(!sideDrawerOpen);
@@ -21,28 +21,20 @@ function App() {
   };
 
   const context: AppContextInterface = {
-    themes: {
-      dark: {
-        primary: "#222222",
-        secondary: "#333333",
-      },
-      space: {
-        primary: "#888888",
-        secondary: "#993933",
-      },
-      beach: {
-        primary: "#2346102",
-        secondary: "#339863",
-      },
-    },
-    toggleTheme: () => {
-      setTheme((theme: any) => (theme = theme === themes.dark ? themes.beach : themes.dark));
-    },
+    theme: theme,
+    toggleTheme: (val) => setTheme(val),
+    // setTheme((theme: any) => theme); //theme = theme === themes.dark ? themes.beach : themes.dark));
   };
 
   return (
     <ThemeContext.Provider value={context}>
-      <div className="App">
+      <div
+        className="App"
+        style={{
+          background:
+            "linear-gradient(to left, " + context.theme.primary + ", " + context.theme.linGradH2 + ")",
+        }}
+      >
         <div className="Container">
           <Toolbar drawerClickHandler={drawerToggleClickHandler} />
           <SideDrawer show={sideDrawerOpen} />

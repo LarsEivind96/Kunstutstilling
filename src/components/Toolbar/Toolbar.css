@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-image: linear-gradient(to right, #3a90cb, #2cdad0);
   height: 56px;
 }
 
@@ -19,7 +18,6 @@
 }
 
 .toolbar__logo a {
-  color: white;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -44,7 +42,6 @@
 }
 
 .toolbar_navigation-items a {
-  color: white;
   text-decoration: none;
 }
 
