@@ -8,28 +8,28 @@ const Svgs = [
   {
     name: "Crazy circle illusion",
     svg: MindTrick,
-    favorite: false,
-  } /*
+    index: 0,
+  },
   {
     name: "Solar system",
     svg: SolarSystem,
-    favorite: false,
+    index: 1,
   },
   {
     name: "Mystic rectangles",
     svg: RectAnimation,
-    favorite: false,
+    index: 2,
   },
   {
     name: "Stars n' Stripes",
     svg: StarsNStripes,
-    favorite: false,
+    index: 3,
   },
   {
     name: "Perfect Pendulum",
     svg: Pendulum,
-    favorite: false,
-  },*/,
+    index: 4,
+  },
 ];
 
 export default Svgs;
