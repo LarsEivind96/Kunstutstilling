@@ -2,6 +2,7 @@ import React from "react";
 
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import "./Toolbar.css";
+import AudioPlayer from "../AudioPlayer/AudioPlayer";
 
 const toolbar = (props: any) => (
   <header className="toolbar">
@@ -13,6 +14,7 @@ const toolbar = (props: any) => (
         <a href="/">LOGO BUDDY</a>
       </div>
       <div className="spacer" />
+      <AudioPlayer />
       <div className="toolbar_navigation-items">
         <ul>
           <li>

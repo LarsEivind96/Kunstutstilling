@@ -1,0 +1,43 @@
+.SvgCard {
+  background-color: var(--gradient-color1);
+  display: grid;
+  width: auto;
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 1fr;
+  padding: 1%;
+  padding-right: 2.2%;
+  justify-content: space-between;
+  border: calc(2px + 0.4vw) solid black;
+  border-radius: calc(2px + 0.8vw);
+  box-shadow: 0 7vw 2vw -5vw rgba(0, 0, 0, 0.5);
+}
+
+.SvgCard > div {
+  background-color: #280c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 22.5vw;
+}
+
+.Svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .SvgCard {
+    grid-template-rows: 48% 48%;
+    grid-template-columns: 1fr;
+    align-content: space-between;
+    padding: 2%;
+    padding-bottom: 3.5%;
+  }
+  .SvgCard > div {
+    width: 60vw;
+    height: 45vw;
+    min-width: 200px;
+    min-height: 150px;
+  }
+}
