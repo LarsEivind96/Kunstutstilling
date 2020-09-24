@@ -29,9 +29,12 @@
   overflow-y: scroll;
 }
 
+.ButtonSection {
+  display: flex;
+}
+
 .FavButton {
-  width: 100%;
-  height: 100%;
+  flex: 3;
   border-radius: calc(2px + 0.8vw);
   background-color: transparent;
   color: white;
@@ -44,6 +47,14 @@
   margin-top: 0.5vw;
   transition-duration: 0.4s;
   cursor: pointer;
+}
+
+.NextButton {
+  flex: 1;
+}
+
+.PrevButton {
+  flex: 1;
 }
 
 .FavButton:hover {

@@ -18,9 +18,25 @@ function Home(props) {
 
   const currentSvg = chooseSvg();
 
+  const changeSvg = (index, next) => {
+    if (next) {
+      if (index == Svgs.length - 1) {
+        props.history.push("/" + 0);
+      } else {
+        props.history.push("/" + (index + 1));
+      }
+    } else {
+      if (index == 0) {
+        props.history.push("/" + (Svgs.length - 1));
+      } else {
+        props.history.push("/" + (index - 1));
+      }
+    }
+  };
+
   return (
     <div className="HomeContainer">
-      <SvgCard currentSvg={currentSvg} />
+      <SvgCard currentSvg={currentSvg} changeSvg={changeSvg} />
     </div>
   );
 }

@@ -4,9 +4,10 @@ import { ThemeContext } from "../../constants/Themes";
 
 interface Props {
   currentSvg: { name: string; svg: string; index: number };
+  changeSvg: any;
 }
 
-const SvgCard = ({ currentSvg }: Props) => {
+const SvgCard = ({ currentSvg, changeSvg }: Props) => {
   // Fetch poetry
   const [isLoading, setIsLoading] = useState(true);
   const [fetchedText, setFetchedText] = useState([]);
@@ -53,9 +54,15 @@ const SvgCard = ({ currentSvg }: Props) => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="ButtonSection">
+              <button className="PrevButton" onClick={() => changeSvg(currentSvg.index, false)}>
+                Previous SVG
+              </button>
               <button className="FavButton" onClick={saveFavorite}>
                 Save as favorite
+              </button>
+              <button className="NextButton" onClick={() => changeSvg(currentSvg.index, true)}>
+                Next SVG
               </button>
             </div>
           </div>
