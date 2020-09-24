@@ -1,5 +1,5 @@
 import MindTrick from "./MindTrick.svg";
-import SolarSystem from "./solar-system/SolarSystem.svg";
+import SolarSystem from "./SolarSystem.svg";
 import RectAnimation from "./RectAnimation.svg";
 import StarsNStripes from "./StarsNStripes.svg";
 import Pendulum from "./Pendulum.svg";

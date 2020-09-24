@@ -55,14 +55,14 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
               </div>
             </div>
             <div className="ButtonSection">
-              <button className="PrevButton" onClick={() => changeSvg(currentSvg.index, false)}>
-                Previous SVG
+              <button className="RedirectButtons" onClick={() => changeSvg(currentSvg.index, false)}>
+                &#171;
               </button>
               <button className="FavButton" onClick={saveFavorite}>
                 Save as favorite
               </button>
-              <button className="NextButton" onClick={() => changeSvg(currentSvg.index, true)}>
-                Next SVG
+              <button className="RedirectButtons" onClick={() => changeSvg(currentSvg.index, true)}>
+                &#187;
               </button>
             </div>
           </div>
