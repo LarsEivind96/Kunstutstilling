@@ -14,7 +14,7 @@ const Svgs = [
     index: 0,
   },
   {
-    name: "Solar system",
+    name: "Solar systems",
     svg: SolarSystem,
     index: 1,
   },
