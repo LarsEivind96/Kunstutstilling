@@ -8,13 +8,12 @@
 html {
   height: 100%;
   font-family: "Maitree", Serif, serif !important;
-  background-image: linear-gradient(to right, var(--gradient-color1), var(--gradient-color2));
 }
 
 body {
   margin: 0;
   color: var(--text-color);
-  height: calc(100% - 60px); /* 100% minus height of navigation bar */
+  height: calc(100% - 50px); /* 100% minus height of navigation bar */
 }
 
 #root {
@@ -26,7 +25,7 @@ body {
 }
 
 .Container {
-  margin-top: 60px; /* Margin to bring content below the navigation bar */
+  margin-top: 50px; /* Margin to bring content below the navigation bar */
 }
 
 .HomeContainer {
@@ -35,54 +34,4 @@ body {
   justify-content: center;
   height: 100%;
   width: 100%;
-}
-
-.SvgCard {
-  background-color: var(--gradient-color1);
-  display: grid;
-  width: auto;
-  grid-template-columns: 48% 48%;
-  grid-template-rows: 1fr;
-  padding: 1%;
-  padding-right: 2.2%;
-  justify-content: space-between;
-  border: calc(2px + 0.4vw) solid black;
-  border-radius: calc(2px + 0.8vw);
-  box-shadow: 0 7vw 2vw -5vw rgba(0, 0, 0, 0.5);
-}
-
-.SvgCard > div {
-  background-color: var(--bg-color);
-  display: flex;
-  width: 30vw;
-  height: 22.5vw;
-  color: white;
-}
-
-.ImageText {
-  padding-left: 5%;
-  width: 100%;
-  height: 100%;
-  font-size: calc(5px + 1.5vw);
-}
-
-.Svg {
-  width: 100%;
-  height: 100%;
-}
-
-@media screen and (max-width: 550px) {
-  .SvgCard {
-    grid-template-rows: 48% 48%;
-    grid-template-columns: 1fr;
-    align-content: space-between;
-    padding: 2%;
-    padding-bottom: 3.5%;
-  }
-  .SvgCard > div {
-    width: 60vw;
-    height: 45vw;
-    min-width: 200px;
-    min-height: 150px;
-  }
 }
