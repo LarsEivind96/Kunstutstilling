@@ -5,7 +5,7 @@ import Svgs from "../svg/Svgs";
 
 function Gallery() {
   return (
-    <div>
+    <div className="Gallery">
       <GalleryGrid />
     </div>
   );

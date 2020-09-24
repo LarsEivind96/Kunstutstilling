@@ -23,10 +23,7 @@ const toolbar = (props: any) => (
         >
           <nav className="toolbar__navigation">
             <div className="toolbar__toggle-button">
-              <DrawerToggleButton
-                click={props.drawerClickHandler}
-                textColor={appContext.theme.text}
-              />
+              <DrawerToggleButton click={props.drawerClickHandler} textColor={appContext.theme.text} />
             </div>
             <div className="toolbar__logo">
               <a href="/" style={{ color: appContext.theme.text }}>
@@ -34,10 +31,6 @@ const toolbar = (props: any) => (
               </a>
             </div>
             <div className="spacer" />
-            <div className="spacer"></div>
-            <div className="spacer" />
-
-            <AudioPlayer />
             <div className="toolbar_navigation-items">
               <ul>
                 <li>
@@ -48,6 +41,11 @@ const toolbar = (props: any) => (
                 <li>
                   <a href="/about" style={{ color: appContext.theme.text }}>
                     About
+                  </a>
+                </li>
+                <li>
+                  <a href="/gallery" style={{ color: appContext.theme.text }}>
+                    Gallery
                   </a>
                 </li>
               </ul>

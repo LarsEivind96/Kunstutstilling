@@ -1,5 +1,4 @@
 .galleryitem {
-  background-color: #696969;
   display: grid;
   justify-items: center;
   border-radius: 25px;
@@ -31,7 +30,9 @@
   justify-content: center;
   grid-column-gap: 150px;
   grid-row-gap: 100px;
-  padding: 25px;
+  padding: 55px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 img {

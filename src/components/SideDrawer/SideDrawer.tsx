@@ -34,6 +34,11 @@ const sideDrawer = (props: any) => {
                   About
                 </a>
               </li>
+              <li>
+                <a href="/gallery" style={{ color: appContext.theme.text }}>
+                  Gallery
+                </a>
+              </li>
             </ul>
           </nav>
         )
