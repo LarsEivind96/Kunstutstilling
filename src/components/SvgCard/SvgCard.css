@@ -1,10 +1,8 @@
 .SvgCard {
   display: grid;
   width: auto;
-  grid-template-columns: 48% 48%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
-  padding: 1%;
-  padding-right: 2.2%;
   justify-content: space-between;
   border: calc(2px + 0.4vw) solid;
   border-radius: calc(2px + 0.8vw);
@@ -15,6 +13,7 @@
   display: flex;
   width: 30vw;
   height: 22.5vw;
+  margin: 1%
 }
 
 .Svg {
@@ -72,11 +71,9 @@
 
 @media screen and (max-width: 550px) {
   .SvgCard {
-    grid-template-rows: 48% 48%;
+    grid-template-rows: 50% 50%;
     grid-template-columns: 1fr;
     align-content: space-between;
-    padding: 2%;
-    padding-bottom: 3.5%;
   }
   .SvgCard > div {
     width: 60vw;
