@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
+import Gallery from "./pages/Gallery";
 import { ThemeContext, themes, AppContextInterface } from "./constants/Themes";
 import AudioPlayer from "./components/AudioPlayer/AudioPlayer";
 import ThemeButtonContainer from "./components/ThemeButton/ThemeButtonContainer";
@@ -32,7 +33,12 @@ function App() {
       <div
         className="App"
         style={{
-          background: "linear-gradient(to left, " + context.theme.primary + ", " + context.theme.linGradH2 + ")",
+          background:
+            "linear-gradient(to left, " +
+            context.theme.primary +
+            ", " +
+            context.theme.linGradH2 +
+            ")",
         }}
       >
         <div className="Container" style={{ background: "white" }}>
@@ -46,6 +52,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
+            <Route path="/gallery" component={Gallery} />
             {/* Make sure this route is at the bottom */}
             <Route path="/:index" exact component={Home} />
           </Switch>
