@@ -1,12 +1,37 @@
+:root {
+  --gradient-color1: rgb(56, 66, 71);
+  --gradient-color2: rgb(42, 42, 43);
+  --text-color: black;
+  --bg-color: #280c34;
+}
+
+html {
+  height: 100%;
+  font-family: "Maitree", Serif, serif !important;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  height: calc(100% - 50px); /* 100% minus height of navigation bar */
+}
+
+#root {
+  height: 100%;
+}
+
 .App {
+  height: 100%;
 }
 
 .Container {
-  margin-top: 60px; /* Margin to bring content below the navigation bar */
+  margin-top: 50px; /* Margin to bring content below the navigation bar */
 }
 
-.SvgCard {
-  background-color: white;
-  display: grid;
-  grid-row: 1fr 1fr;
+.HomeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }

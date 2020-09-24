@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+    
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="20%" style="stop-color:#303030;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#151515;stop-opacity:1" />
+    </linearGradient>
+
+    <rect
+        width="400"
+        height="140"
+        x="0"
+        y="0"
+        style="fill:#000060"
+    />
+    <rect
+        width="400"
+        height="160"
+        x="0"
+        y="140"
+        fill="url(#groundGrad)"
+    />
+    <circle cx="40" cy="60" r="1" style="fill:#ffffff"/>
+    <circle cx="370" cy="110" r="1" style="fill:#ffffff" />
+    <circle cx="215" cy="125" r="1" style="fill:#ffffff" />
+    <circle cx="160" cy="40" r="1" style="fill:#ffffff" />
+    <circle cx="320" cy="70" r="1" style="fill:#ffffff" />
+    <circle cx="70" cy="130" r="1" style="fill:#ffffff" />
+    
+    
+
+    <line id="line1" x1="390" y1="150" x2="450" y2="150" style="stroke:#802525;stroke-width:4" />
+    <path id="motionPathLine1" fill="none" stroke="#000000" stroke-miterlimit="10" d="M0,0c0,0-450,0-450,0"/>   
+    <animateMotion 
+        href="#line1"
+        dur="0.8s"
+        begin="0s"
+        fill="freeze"
+        repeatCount="indefinite"
+        >
+            <mpath href="#motionPathLine1" />
+    </animateMotion>
+
+    <g id="car">
+        <polygon 
+        points="319.87,149.84 345.88,177.8 253.87,178.18 252.71,149.84"
+        style="fill:#656565;stroke:black;stroke-width:2"
+        />
+        <polygon
+        points="345.88,177.8 351.71,201.87 347.44,210.79 331.91,215.07 332.68,222.83 292.31,227.49 61.7,228.65 31.8,215.84 27.92,203.42 32.97,174.69 111.39,180.12 196.8,179.35 253.87,178.18"
+        style="fill:#505050;stroke:black;stroke-width:2"
+        />
+        <polygon
+        points="121.49,132 199.52,132 193,156.44 113.72,156.44"
+        style="fill:#656565;stroke:black;stroke-width:2"
+        />
+        <polygon
+        points="199.52,132 252.71,149.84 253.87,178.18 193,156.44"
+        style="fill:#606080;stroke:black;stroke-width:2"
+        />
+        <polygon
+        points="193,156.44 253.87,178.18 196.8,179.35"
+        style="fill:#454565;stroke:black;stroke-width:2"
+        />
+        <polygon
+        points="193,156.44 196.8,179.35 111.39,180.12 113.72,156.44"
+        style="fill:#454565;stroke:black;stroke-width:2"
+        />
+        <polygon
+        points="111.39,180.12 32.97,174.69 113.72,156.44"
+        style="fill:#454565;stroke:black;stroke-width:2"
+        />
+        <polygon
+        points="55.1,150.62 121.49,132 113.72,156.44 32.97,174.69"
+        style="fill:#606080;stroke:black;stroke-width:2"
+        />
+    </g>
+
+    <path id="motionPath" fill="none" stroke="#000000" stroke-miterlimit="10" d="M0,0c0,0-2,7-0,0"/>   
+    <animateMotion 
+        href="#car"
+        dur="0.8s"
+        begin="0s"
+        fill="freeze"
+        repeatCount="indefinite"
+        >
+            <mpath href="#motionPath" />
+    </animateMotion>
+
+    <g>
+        <circle
+        cx="90.44"
+        cy="226"
+        r="25.78"
+        style="fill:#050505;stroke:black;stroke-width:2"
+        />
+        <circle
+        cx="90.44"
+        cy="226"
+        r="20"
+        style="fill:#252525;stroke:black;stroke-width:2"
+        />
+    </g>
+    <g>
+        <circle
+        cx="265"
+        cy="226"
+        r="25.78"
+        style="fill:#050505;stroke:black;stroke-width:2"
+        />
+        <circle
+        cx="265"
+        cy="226"
+        r="20"
+        style="fill:#252525;stroke:black;stroke-width:2"
+        />
+    </g>
+    
+    <line id="line2" x1="450" y1="210" x2="500" y2="210" style="stroke:#404090;stroke-width:4" />
+    <path id="motionPathLine2" fill="none" stroke="#000000" stroke-miterlimit="10" d="M0,0c0,0-600,0-600,0"/>   
+    <animateMotion 
+        href="#line2"
+        dur="0.8s"
+        begin="0.4s"
+        fill="freeze"
+        repeatCount="indefinite"
+        >
+            <mpath href="#motionPathLine2" />
+    </animateMotion>
+
+    <line id="line3" x1="450" y1="170" x2="500" y2="170" style="stroke:#409040;stroke-width:4" />
+    <path id="motionPathLine3" fill="none" stroke="#000000" stroke-miterlimit="10" d="M0,0c0,0-600,0-600,0"/>   
+    <animateMotion 
+        href="#line3"
+        dur="0.8s"
+        begin="0.7s"
+        fill="freeze"
+        repeatCount="indefinite"
+        >
+            <mpath href="#motionPathLine3" />
+    </animateMotion>
+
+
+
+
+
+</svg>
