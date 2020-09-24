@@ -12,7 +12,7 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
   const [isLoading, setIsLoading] = useState(true);
   const [fetchedText, setFetchedText] = useState([]);
 
-  const fetchTestText = async () => {
+  const fetchPoetry = async () => {
     setIsLoading(true);
     await fetch("https://poetrydb.org/random,linecount/1;10")
       .then((res) => res.json())
@@ -29,7 +29,7 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
   };
 
   useEffect(() => {
-    fetchTestText();
+    fetchPoetry();
   }, []);
 
   // Save favorite
@@ -55,13 +55,25 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
               </div>
             </div>
             <div className="ButtonSection">
-              <button className="RedirectButtons" onClick={() => changeSvg(currentSvg.index, false)}>
+              <button
+                className="RedirectButtons"
+                onClick={() => {
+                  changeSvg(currentSvg.index, false);
+                  fetchPoetry();
+                }}
+              >
                 &#171;
               </button>
               <button className="FavButton" onClick={saveFavorite}>
                 Save as favorite
               </button>
-              <button className="RedirectButtons" onClick={() => changeSvg(currentSvg.index, true)}>
+              <button
+                className="RedirectButtons"
+                onClick={() => {
+                  changeSvg(currentSvg.index, true);
+                  fetchPoetry();
+                }}
+              >
                 &#187;
               </button>
             </div>
