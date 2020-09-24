@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "../App.css";
 import GalleryGrid from "../components/GalleryGrid/GalleryGrid";
+import Svgs from "../svg/Svgs";
 
 function Gallery() {
   return (
-    <div className="container">
-      <h1>Gallery</h1>
+    <div>
       <GalleryGrid />
     </div>
   );

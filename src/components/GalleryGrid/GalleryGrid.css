@@ -23,7 +23,6 @@
   padding-bottom: 50px;
   margin-bottom: 50px;
   border-bottom: 50px;
-  background-color: white;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fill, 400px);
