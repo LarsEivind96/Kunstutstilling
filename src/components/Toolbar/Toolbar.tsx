@@ -22,19 +22,19 @@ const toolbar = (props: any) => (
             </div>
             <div className="toolbar__logo">
               <a href="/" style={{ color: appContext.theme.text }}>
-                LOGO BUDDY
+                WELCOME
               </a>
             </div>
             <div className="spacer" />
             <div className="toolbar_navigation-items">
               <ul>
                 <li>
-                  <a href="/" style={{ color: appContext.theme.text }}>
+                  <a className="navLink" href="/" style={{ color: appContext.theme.text }}>
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/gallery" style={{ color: appContext.theme.text }}>
+                  <a className="navLink" href="/gallery" style={{ color: appContext.theme.text }}>
                     Gallery
                   </a>
                 </li>
