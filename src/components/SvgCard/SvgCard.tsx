@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./SvgCard.css";
 import { ThemeContext } from "../../constants/Themes";
+import FavButton from "../FavButton/FavButton";
 
 interface Props {
   currentSvg: { name: string; svg: string; index: number };
@@ -32,11 +33,6 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
     fetchPoetry();
   }, []);
 
-  // Save favorite
-  const saveFavorite = () => {
-    localStorage.setItem("favorite", currentSvg.index.toString());
-  };
-
   return (
     <ThemeContext.Consumer>
       {(appContext) =>
@@ -64,9 +60,7 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
               >
                 &#171;
               </button>
-              <button className="FavButton" onClick={saveFavorite}>
-                Save as favorite
-              </button>
+              <FavButton index={currentSvg.index.toString()} label="Save as favorite" />
               <button
                 className="RedirectButtons"
                 onClick={() => {

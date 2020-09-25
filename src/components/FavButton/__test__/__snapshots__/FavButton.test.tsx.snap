@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correlates to snapshot 1 1`] = `
+<div>
+  <button
+    class="FavButton"
+    data-testid="favbut"
+  >
+    Save as favorite
+  </button>
+</div>
+`;
+
+exports[`correlates to snapshot 2 1`] = `
+<div>
+  <button
+    class="FavButton"
+    data-testid="favbut"
+  >
+    Next SVG
+  </button>
+</div>
+`;
