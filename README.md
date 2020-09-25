@@ -1,4 +1,3 @@
-
 ### HTML Web storage 
 
 We have implemented both local storage and sessions storage in our project. 
@@ -8,7 +7,15 @@ Local storage is used for storing the user’s favorite SVG. When the user press
 Session storage is used for saving the current theme displayed on the page. A theme is an object containing parameters describing what colors to use on the page. The object is stored in session storage as a JSON string and is parsed back to the original object when fetched. We were required to store the theme in session storage to maintain the same theme when routing between different components.
 
 
+## AJAX
+Vi har brukt det innebygde fetch()-kallet i javascript APIet til å hente ut dikt fra https://poetrydb.org/. Hver gang brukeren bytter SVG, blir det hentet ut et tilfeldig dikt med 10 linjer. 
 
+(Skrive noe om hvordan lyd blir hentet - Larsi)
+
+### Testing
+Vi har brukt JEST sammen med React Testing Library til å utføre testing. Det er skrevet en enhetstest på FavButton-klassen ("Save as favoritt"-knappen), som sørger for at knappen rendres riktig på skjermen. Samtidig er det skrevet to snapshot-tester på samme klassen som passer på at komponenten blir opprettet med riktige parametre.
+
+Brukergrensesnittet er testet på mobil med horisontal og vertikal orientering, samt større PC skjerm. Vi har også utført cross-browser testing, og sjekket at all funksjonalitet er kompatibel i Chrome, Firefox og Edge.
 
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.idi.ntnu.no/#https://gitlab.stud.idi.ntnu.no/it2810-h20/team-37/prosjekt2) 
