@@ -8,7 +8,7 @@ Session storage is used for saving the current theme displayed on the page. A th
 
 
 ## AJAX
-We are using the built-in fetch()-call from the Javascript API to fetch poems from https://poetrydb.org/. Every time a user switches the SVG to be displayed, a random poem with 10 lines are fetched asynchronously. 
+We are using the built-in fetch()-call from the Javascript API to fetch poems from https://poetrydb.org/. Every time a user switches to a different SVG on the Home screen, a random poem with 10 lines is fetched asynchronously. 
 
 
 (Skrive noe om hvordan lyd blir hentet - Larsi)
