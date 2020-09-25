@@ -1,4 +1,6 @@
-### HTML Web storage 
+# Documentation
+
+## HTML Web storage 
 
 We have implemented both local storage and sessions storage in our project. 
 
@@ -7,13 +9,13 @@ Local storage is used for storing the user’s favorite SVG. When the user press
 Session storage is used for saving the current theme displayed on the page. A theme is an object containing parameters describing what colors to use on the page. The object is stored in session storage as a JSON string and is parsed back to the original object when fetched. We were required to store the theme in session storage to maintain the same theme when routing between different components.
 
 
-## AJAX
+### AJAX
 We are using the built-in fetch()-call from the Javascript API to fetch poems from https://poetrydb.org/. Every time a user switches to a different SVG on the Home screen, a random poem with 10 lines is fetched asynchronously. 
 
 
 (Skrive noe om hvordan lyd blir hentet - Larsi)
 
-### Testing
+## Testing
 For testing we are using JEST along with the React Testing Library. A unit test is written for the FavButton-class (“Save as favorite” button), which ensures that the button is rendered correctly to the screen. Additionally, two snapshot tests are written for that same class, which ensures that the component is constructed with the appropriate parameters.
 
 The user interface is tested on a mobile device with both horizontal and vertical orientation, as well as on a bigger computer screen. We have performed cross-browser testing on Chrome, Edge and Firefox and made sure that all functionality is compatible with these browsers.
