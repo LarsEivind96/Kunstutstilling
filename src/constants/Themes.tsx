@@ -30,7 +30,7 @@ export const themes = {
   crazy: {
     primary: "yellow",
     secondary: "purple",
-    text: "red",
+    text: "white",
     linGradH1: "pink",
     linGradH2: "blue",
   },
