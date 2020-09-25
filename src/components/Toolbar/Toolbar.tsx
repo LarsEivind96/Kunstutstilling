@@ -13,12 +13,7 @@ const toolbar = (props: any) => (
         <header
           className="toolbar"
           style={{
-            background:
-              "linear-gradient(to right, " +
-              appContext.theme.linGradH1 +
-              ", " +
-              appContext.theme.linGradH2 +
-              ")",
+            background: "linear-gradient(to right, " + appContext.theme.linGradH1 + ", " + appContext.theme.linGradH2 + ")",
           }}
         >
           <nav className="toolbar__navigation">
@@ -36,11 +31,6 @@ const toolbar = (props: any) => (
                 <li>
                   <a href="/" style={{ color: appContext.theme.text }}>
                     Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/about" style={{ color: appContext.theme.text }}>
-                    About
                   </a>
                 </li>
                 <li>

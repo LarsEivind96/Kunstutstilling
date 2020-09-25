@@ -15,23 +15,13 @@ const sideDrawer = (props: any) => {
           <nav
             className={drawerClasses}
             style={{
-              background:
-                "linear-gradient(to right, " +
-                appContext.theme.linGradH1 +
-                ", " +
-                appContext.theme.linGradH2 +
-                ")",
+              background: "linear-gradient(to right, " + appContext.theme.linGradH1 + ", " + appContext.theme.linGradH2 + ")",
             }}
           >
             <ul>
               <li>
                 <a href="/" style={{ color: appContext.theme.text }}>
                   Home
-                </a>
-              </li>
-              <li>
-                <a href="/about" style={{ color: appContext.theme.text }}>
-                  About
                 </a>
               </li>
               <li>
