@@ -12,7 +12,9 @@ import ThemeButtonContainer from "./components/ThemeButton/ThemeButtonContainer"
 
 function App() {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
-  const [theme, setTheme] = useState(themes.dark);
+  const selectedTheme = sessionStorage.getItem("theme");
+  const startTheme = selectedTheme ? JSON.parse(selectedTheme) : themes.dark;
+  const [theme, setTheme] = useState(startTheme);
 
   const drawerToggleClickHandler = () => {
     setSideDrawerOpen(!sideDrawerOpen);
