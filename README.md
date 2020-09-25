@@ -1,4 +1,5 @@
 # Documentation
+Below is a description of how the website is set up, its key features, and how we have complied to the technological requirements for this project.
 
 ## HTML Web storage 
 
@@ -9,7 +10,7 @@ Local storage is used for storing the user’s favorite SVG. When the user press
 Session storage is used for saving the current theme displayed on the page. A theme is an object containing parameters describing what colors to use on the page. The object is stored in session storage as a JSON string and is parsed back to the original object when fetched. We were required to store the theme in session storage to maintain the same theme when routing between different components.
 
 
-### AJAX
+## AJAX
 We are using the built-in fetch()-call from the Javascript API to fetch poems from https://poetrydb.org/. Every time a user switches to a different SVG on the Home screen, a random poem with 10 lines is fetched asynchronously. 
 
 
