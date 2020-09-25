@@ -8,15 +8,15 @@ Session storage is used for saving the current theme displayed on the page. A th
 
 
 ## AJAX
-Vi har brukt det innebygde fetch()-kallet i javascript APIet til å hente ut dikt fra https://poetrydb.org/. Hver gang brukeren bytter SVG, blir det hentet ut et tilfeldig dikt med 10 linjer. 
+We are using the built-in fetch()-call from the Javascript API to fetch poems from https://poetrydb.org/. Every time a user switches the SVG to be displayed, a random poem with 10 lines are fetched asynchronously. 
+
 
 (Skrive noe om hvordan lyd blir hentet - Larsi)
 
 ### Testing
-Vi har brukt JEST sammen med React Testing Library til å utføre testing. Det er skrevet en enhetstest på FavButton-klassen ("Save as favoritt"-knappen), som sørger for at knappen rendres riktig på skjermen. Samtidig er det skrevet to snapshot-tester på samme klassen som passer på at komponenten blir opprettet med riktige parametre.
+For testing we are using JEST along with the React Testing Library. A unit test is written for the FavButton-class (“Save as favorite” button), which ensures that the button is rendered correctly to the screen. Additionally, two snapshot tests are written for that same class, which ensures that the component is constructed with the appropriate parameters.
 
-Brukergrensesnittet er testet på mobil med horisontal og vertikal orientering, samt større PC skjerm. Vi har også utført cross-browser testing, og sjekket at all funksjonalitet er kompatibel i Chrome, Firefox og Edge.
-
+The user interface is tested on a mobile device with both horizontal and vertical orientation, as well as on a bigger computer screen. We have performed cross-browser testing on Chrome, Edge and Firefox and made sure that all functionality is compatible with these browsers.
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.idi.ntnu.no/#https://gitlab.stud.idi.ntnu.no/it2810-h20/team-37/prosjekt2) 
 
