@@ -7,9 +7,15 @@ function Home(props) {
   const chooseSvg = () => {
     const favIndex = localStorage.getItem("favorite");
     if (props.match.params.index) {
+      console.log("props.match....", props.match.params.index);
       return Svgs[parseInt(props.match.params.index)];
     } else if (favIndex) {
-      return Svgs[parseInt(favIndex)];
+      console.log("favindex", favIndex);
+      const randomFav = favIndex.charAt(
+        Math.floor(Math.random() * Math.floor(favIndex.length))
+      );
+      console.log(randomFav);
+      return Svgs[parseInt(randomFav)];
     }
 
     let index = Math.floor(Math.random() * Math.floor(Svgs.length));
