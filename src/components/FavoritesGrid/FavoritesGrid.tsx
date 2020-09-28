@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./FavoritesGrid.css";
 import "../TempSVG/temp.svg";
 import Svgs from "../../svg/Svgs";
@@ -12,9 +12,7 @@ const FavoritesGrid = (props: any) => {
   let favoriteList = favorites.split("");
   console.log("favoriteList: ", favoriteList);
 
-  let svgFavorites = Svgs.filter((svg) =>
-    favoriteList.includes(svg.index.toString())
-  );
+  let svgFavorites = Svgs.filter((svg) => favoriteList.includes(svg.index.toString()));
   console.log(svgFavorites);
 
   const Iitem = (props: any) => (
@@ -35,12 +33,7 @@ const FavoritesGrid = (props: any) => {
   const ListItems = (props: any) => (
     <div className="gallerycontainer">
       {svgFavorites.map((item) => (
-        <Iitem
-          key={item.index}
-          i={item.index}
-          bgColor={props.bgColor}
-          color={props.color}
-        />
+        <Iitem key={item.index} i={item.index} bgColor={props.bgColor} color={props.color} />
       ))}
     </div>
   );
@@ -50,10 +43,7 @@ const FavoritesGrid = (props: any) => {
       {(appContext) =>
         appContext && (
           <div>
-            <ListItems
-              bgColor={appContext.theme.secondary}
-              color={appContext.theme.text}
-            />
+            <ListItems bgColor={appContext.theme.secondary} color={appContext.theme.text} />
           </div>
         )
       }

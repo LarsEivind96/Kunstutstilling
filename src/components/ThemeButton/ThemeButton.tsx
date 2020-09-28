@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeContext, themes } from "../../constants/Themes";
+import { ThemeContext } from "../../constants/Themes";
 
 interface props {
   theme: any;

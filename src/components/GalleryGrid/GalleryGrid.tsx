@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./GalleryGrid.css";
 import "../TempSVG/temp.svg";
 import Svgs from "../../svg/Svgs";
 import { ThemeContext } from "../../constants/Themes";
 
-interface Props {
-  currentSvg: { name: string; svg: string; index: number };
-  changeSvg: any;
-}
-
-const gallerygrid = (props) => {
+const gallerygrid = () => {
   return (
     <ThemeContext.Consumer>
       {(appContext) =>

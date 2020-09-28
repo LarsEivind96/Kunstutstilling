@@ -43,3 +43,9 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 550px) {
+  .moodContainer2 {
+    display: none;
+  }
+}

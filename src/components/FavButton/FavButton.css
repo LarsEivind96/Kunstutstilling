@@ -1,4 +1,4 @@
-.FavButton3 {
+.FavButton {
   flex: 1;
   background-color: transparent;
   color: white;
@@ -12,8 +12,12 @@
   margin-top: 0.5vw;
 }
 
+.FavButton:hover {
+  opacity: 0.4;
+}
+
 @media screen and (max-width: 550px) {
-  .FavButton3 {
+  .FavButton {
     font-size: 10vw;
   }
 }
