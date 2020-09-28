@@ -50,6 +50,14 @@
   opacity: 0.4;
 }
 
+h1 {
+  font-size: calc(10px + 2vw);
+}
+
+p {
+  font-size: calc(6px + 1vw);
+}
+
 @media screen and (max-width: 550px) {
   .SvgCard {
     grid-template-rows: 50% 50%;
@@ -65,5 +73,12 @@
   }
   .RedirectButtons {
     font-size: 10vw;
+  }
+  h1 {
+    font-size: calc(10px + 3vw);
+  }
+
+  p {
+    font-size: calc(6px + 1.5vw);
   }
 }
