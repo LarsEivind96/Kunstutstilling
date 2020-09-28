@@ -8,14 +8,9 @@ function Home(props) {
   const chooseSvg = () => {
     const favIndex = localStorage.getItem("favorite");
     if (props.match.params.index) {
-      console.log("props.match....", props.match.params.index);
       return Svgs[parseInt(props.match.params.index)];
     } else if (favIndex) {
-      console.log("favindex", favIndex);
-      const randomFav = favIndex.charAt(
-        Math.floor(Math.random() * Math.floor(favIndex.length))
-      );
-      console.log(randomFav);
+      const randomFav = favIndex.charAt(Math.floor(Math.random() * Math.floor(favIndex.length)));
       return Svgs[parseInt(randomFav)];
     }
 
@@ -25,15 +20,15 @@ function Home(props) {
 
   const currentSvg = chooseSvg();
 
-  const changeSvg = (index, next) => {
+  const changeSvg = (index: number, next: boolean) => {
     if (next) {
-      if (index == Svgs.length - 1) {
+      if (index === Svgs.length - 1) {
         props.history.push("/" + 0);
       } else {
         props.history.push("/" + (index + 1));
       }
     } else {
-      if (index == 0) {
+      if (index === 0) {
         props.history.push("/" + (Svgs.length - 1));
       } else {
         props.history.push("/" + (index - 1));

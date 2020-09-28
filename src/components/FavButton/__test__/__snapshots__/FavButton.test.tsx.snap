@@ -2,22 +2,32 @@
 
 exports[`correlates to snapshot 1 1`] = `
 <div>
-  <button
+  <div
     class="FavButton"
-    data-testid="favbut"
   >
-    Save as favorite
-  </button>
+    <button
+      class="FavButton3"
+      data-testid="favbut"
+      id="favbutton"
+    >
+      ❤
+    </button>
+  </div>
 </div>
 `;
 
 exports[`correlates to snapshot 2 1`] = `
 <div>
-  <button
+  <div
     class="FavButton"
-    data-testid="favbut"
   >
-    Next SVG
-  </button>
+    <button
+      class="FavButton3"
+      data-testid="favbut"
+      id="favbutton"
+    >
+      ❤
+    </button>
+  </div>
 </div>
 `;

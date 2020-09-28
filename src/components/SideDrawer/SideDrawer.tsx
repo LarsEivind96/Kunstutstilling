@@ -3,6 +3,9 @@ import React from "react";
 import "./SideDrawer.css";
 import { ThemeContext } from "../../constants/Themes";
 
+import AudioPlayer from "../AudioPlayer/AudioPlayer";
+import ThemeButtonContainer from "../ThemeButton/ThemeButtonContainer";
+
 const sideDrawer = (props: any) => {
   let drawerClasses = "side-drawer";
   if (props.show) {
@@ -38,6 +41,12 @@ const sideDrawer = (props: any) => {
                 <a href="/favorites" style={{ color: appContext.theme.text }}>
                   Favorites
                 </a>
+              </li>
+              <li>
+                <div className="moodContainer2">
+                  <ThemeButtonContainer />
+                  <AudioPlayer />
+                </div>
               </li>
             </ul>
           </nav>

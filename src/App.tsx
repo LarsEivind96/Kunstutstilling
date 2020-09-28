@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -35,14 +35,21 @@ function App() {
       <div
         className="App"
         style={{
+<<<<<<< HEAD
           background: context.theme.bgImage,
+=======
+          background:
+            "linear-gradient(to left, " + context.theme.primary + ", " + context.theme.linGradH2 + ")",
+>>>>>>> master
         }}
       >
         <Toolbar drawerClickHandler={drawerToggleClickHandler} />
         <SideDrawer show={sideDrawerOpen} />
         {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
-        <AudioPlayer />
-        <ThemeButtonContainer />
+        <div className="moodContainer">
+          <AudioPlayer />
+          <ThemeButtonContainer />
+        </div>
         <Router>
           <Switch>
             <Route path="/" exact component={Home} />

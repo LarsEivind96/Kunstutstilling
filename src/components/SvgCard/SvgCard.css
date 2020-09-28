@@ -33,34 +33,6 @@
   display: flex;
 }
 
-.FavButton {
-  flex: 1;
-  background-color: transparent;
-  color: white;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  font-size: 6vw;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  outline: none;
-  margin-top: 0.5vw;
-}
-
-.FavButton2 {
-  flex: 1;
-  background-color: transparent;
-  color: white;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  font-size: 6vw;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  outline: none;
-  margin-top: 0.5vw;
-}
-
 .RedirectButtons {
   flex: 1;
   background: transparent;
@@ -74,11 +46,7 @@
 }
 
 .RedirectButtons:hover {
-  color: green;
-}
-
-.FavButton2:hover {
-  color: red;
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 550px) {

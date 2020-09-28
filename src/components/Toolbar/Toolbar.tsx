@@ -2,9 +2,7 @@ import React from "react";
 
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import "./Toolbar.css";
-import AudioPlayer from "../AudioPlayer/AudioPlayer";
-import ThemeButton from "../ThemeButton/ThemeButton";
-import { themes, ThemeContext } from "../../constants/Themes";
+import { ThemeContext } from "../../constants/Themes";
 
 const toolbar = (props: any) => (
   <ThemeContext.Consumer>
@@ -23,10 +21,7 @@ const toolbar = (props: any) => (
         >
           <nav className="toolbar__navigation">
             <div className="toolbar__toggle-button">
-              <DrawerToggleButton
-                click={props.drawerClickHandler}
-                textColor={appContext.theme.text}
-              />
+              <DrawerToggleButton click={props.drawerClickHandler} textColor={appContext.theme.text} />
             </div>
             <div className="toolbar__logo">
               <a href="/" style={{ color: appContext.theme.text }}>
@@ -37,29 +32,17 @@ const toolbar = (props: any) => (
             <div className="toolbar_navigation-items">
               <ul>
                 <li>
-                  <a
-                    className="navLink"
-                    href="/"
-                    style={{ color: appContext.theme.text }}
-                  >
+                  <a className="navLink" href="/" style={{ color: appContext.theme.text }}>
                     Home
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="navLink"
-                    href="/gallery"
-                    style={{ color: appContext.theme.text }}
-                  >
+                  <a className="navLink" href="/gallery" style={{ color: appContext.theme.text }}>
                     Gallery
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="navLink"
-                    href="/favorites"
-                    style={{ color: appContext.theme.text }}
-                  >
+                  <a className="navLink" href="/favorites" style={{ color: appContext.theme.text }}>
                     Favorites
                   </a>
                 </li>

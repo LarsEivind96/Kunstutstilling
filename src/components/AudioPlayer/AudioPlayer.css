@@ -31,3 +31,11 @@ audio::-webkit-media-controls-current-time-display {
 audio::-webkit-media-controls-time-remaining-display {
   display: none;
 }
+
+@media screen and (max-width: 550px) {
+  .audioPlayer {
+    position: relative;
+    margin: 0px;
+    margin-top: 15px;
+  }
+}

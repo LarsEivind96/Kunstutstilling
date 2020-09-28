@@ -18,3 +18,17 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .ThemeButContainer {
+    position: relative;
+    margin: 0;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  #button {
+    width: 60px;
+    height: 100%;
+  }
+}
