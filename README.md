@@ -8,7 +8,8 @@ Font sizes are either set to a size which fits all screen sizes, dynamically adj
 
 For the Gallery and Favorite screens, the SVGs are either displayed in a 3x3, 2x4 or 1x8 grid depending on the size of the screen.
 
-## SVG
+## Layout
+We have used a combination of CSS grid and a flexbox layout. The navigation bar and the buttons to show the next/previous SVG is positioned using a flexbox layout. As these are one-dimensional layouts a flexbox layout does a very good job. The grid of SVGs displayed in the “Gallery” and “Favorites” pages are controlled using CSS-grid – a natural choice as the SVGs are displayed in a two-dimensional fashion grid.
 
 ## HTML Web storage 
 
