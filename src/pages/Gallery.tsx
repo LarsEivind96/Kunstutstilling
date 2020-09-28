@@ -4,7 +4,7 @@ import GalleryGrid from "../components/GalleryGrid/GalleryGrid";
 
 function Gallery() {
   return (
-    <div className="Gallery">
+    <div className="PageContainer">
       <GalleryGrid />
     </div>
   );

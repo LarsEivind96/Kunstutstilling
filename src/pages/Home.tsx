@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import SvgCard from "../components/SvgCard/SvgCard";
+import { ThemeContext } from "../constants/Themes";
 import Svgs from "../svg/Svgs";
 
 function Home(props) {
@@ -41,9 +42,25 @@ function Home(props) {
   };
 
   return (
-    <div className="HomeContainer">
-      <SvgCard currentSvg={currentSvg} changeSvg={changeSvg} />
-    </div>
+    <ThemeContext.Consumer>
+      {(appContext) =>
+        appContext && (
+          <div
+            className="PageContainer"
+            style={{
+              background:
+                "linear-gradient(to left, " +
+                appContext.theme.primary +
+                ", " +
+                appContext.theme.linGradH2 +
+                ")",
+            }}
+          >
+            <SvgCard currentSvg={currentSvg} changeSvg={changeSvg} />
+          </div>
+        )
+      }
+    </ThemeContext.Consumer>
   );
 }
 

@@ -43,13 +43,11 @@ function App() {
             ")",
         }}
       >
-        <div className="Container" style={{ background: "white" }}>
-          <Toolbar drawerClickHandler={drawerToggleClickHandler} />
-          <SideDrawer show={sideDrawerOpen} />
-          {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
-          <AudioPlayer />
-          <ThemeButtonContainer />
-        </div>
+        <Toolbar drawerClickHandler={drawerToggleClickHandler} />
+        <SideDrawer show={sideDrawerOpen} />
+        {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
+        <AudioPlayer />
+        <ThemeButtonContainer />
         <Router>
           <Switch>
             <Route path="/" exact component={Home} />
