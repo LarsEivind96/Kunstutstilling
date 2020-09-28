@@ -36,12 +36,13 @@ Audio is fetched using the built-in HTML audio tag pointing to mp3 files in the 
 
 For testing we are using JEST along with the React Testing Library. A unit test is written for the FavButton-class (“Save as favorite” button), which ensures that the button is rendered correctly to the screen. Additionally, two snapshot tests are written for that same class, which ensures that the component is constructed with the appropriate parameters.
 
-The user interface is tested on a mobile device with both horizontal and vertical orientation, as well as on a bigger computer screen. We have performed cross-browser testing on Chrome, Edge and Firefox and made sure that all functionality is compatible with these browsers.
-
 ## Cross-browser testing
 
+The user interface is tested on a mobile device with both horizontal and vertical orientation, as well as on a bigger computer screen. We have performed cross-browser testing on Chrome, Edge and Firefox and made sure that all functionality is compatible with these browsers.
 We noticed that on the iPad, three of the SVGs didn't animate at all, but on all other devices they worked fine.
 This was due to how the animations were written in the SVG files, the animation tags were outside of e.g. the circle tag that were supposed to be animated, not inside. The problem was solved by moving the animation tag inside.
+When testing the website in different pc-browsers we discovered that some of the animations stopped working only in Firefox. It turned out that Firefox was stricter than Google Chrome and Microsoft Edge when it came to defining paths for the animations. These issues were fixed by changing the paths so that Firefox also recognized them.
+The website has been tested on pc screens with both Full HD (1920x1080) and 4K (3840x2160) resolution. In both cases the website behaved as it was supposed to and it looked the same in both resolutions.
 
 ## Sources
 
