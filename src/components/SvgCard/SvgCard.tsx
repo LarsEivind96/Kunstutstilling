@@ -74,6 +74,7 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
             <div className="ButtonSection">
               <button
                 className="RedirectButtons"
+                style={{ color: appContext.theme.text }}
                 onClick={() => {
                   changeSvg(currentSvg.index, false);
                   fetchPoetry();
@@ -87,6 +88,7 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
               />
               <button
                 className="RedirectButtons"
+                style={{ color: appContext.theme.text }}
                 onClick={() => {
                   changeSvg(currentSvg.index, true);
                   fetchPoetry();

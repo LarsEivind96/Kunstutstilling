@@ -31,7 +31,7 @@ export const themes = {
   beach: {
     primary: "#c2b280",
     secondary: "#0077be",
-    text: "#dce5eb",
+    text: "black",
     linGradH1: "red",
     linGradH2: "white",
     bgImage:
@@ -43,7 +43,7 @@ export const themes = {
   crazy: {
     primary: "yellow",
     secondary: "purple",
-    text: "white",
+    text: "black",
     linGradH1: "pink",
     linGradH2: "blue",
     bgImage:
