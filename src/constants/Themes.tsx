@@ -15,7 +15,7 @@ export const themes = {
   },
   space: {
     primary: "grey",
-    secondary: "#993933",
+    secondary: "#145051",
     text: "white",
     linGradH1: "grey",
     linGradH2: "#111111",
