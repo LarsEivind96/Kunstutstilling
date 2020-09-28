@@ -1,8 +1,6 @@
 import React from "react";
-
 import "./SideDrawer.css";
 import { ThemeContext } from "../../constants/Themes";
-
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
 import ThemeButtonContainer from "../ThemeButton/ThemeButtonContainer";
 

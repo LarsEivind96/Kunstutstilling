@@ -8,14 +8,6 @@
   font-size: 25px;
 }
 
-.galleryimage {
-  height: 225px;
-  width: 300px;
-  border-radius: 10px;
-  background-image: url("https://thumbs.dreamstime.com/z/online-robber-17098197.jpg");
-  background-size: 100% 100%;
-}
-
 .gallerycontainer {
   width: 90%;
   margin: 10px;
@@ -38,12 +30,5 @@
 img {
   height: 225px;
   width: 300px;
-  border-radius: 10px;
-}
-
-svg {
-  height: 225px;
-  width: 300px;
-  background-color: violet;
   border-radius: 10px;
 }

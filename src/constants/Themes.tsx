@@ -25,7 +25,10 @@ export const themes = {
     primary: "white",
     secondary: "#0077be",
     text: "black",
-    bgImage: "url(" + "https://image.tmdb.org/t/p/original/n96EJQ8KzFVAFZo8PWVq4mjcyTK.jpg" + ")",
+    bgImage:
+      "url(" +
+      "https://image.tmdb.org/t/p/original/n96EJQ8KzFVAFZo8PWVq4mjcyTK.jpg" +
+      ")",
   },
   crazy: {
     primary: "yellow",
@@ -38,4 +41,6 @@ export const themes = {
   },
 };
 
-export const ThemeContext = React.createContext<AppContextInterface | null>(null);
+export const ThemeContext = React.createContext<AppContextInterface | null>(
+  null
+);
