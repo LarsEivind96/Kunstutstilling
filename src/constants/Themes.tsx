@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import React from "react";
 
 export interface AppContextInterface {
@@ -11,8 +10,6 @@ export const themes = {
     primary: "#333333",
     secondary: "black",
     text: "white",
-    linGradH1: "black",
-    linGradH2: "#333333",
     bgImage:
       "url(" +
       "https://lesilets.com/wp-content/uploads/2018/04/1096907-cool-dark-background-2560x1600-for-tablet.jpg" +
