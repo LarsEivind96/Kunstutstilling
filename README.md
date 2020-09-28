@@ -35,6 +35,11 @@ For testing we are using JEST along with the React Testing Library. A unit test 
 The user interface is tested on a mobile device with both horizontal and vertical orientation, as well as on a bigger computer screen. We have performed cross-browser testing on Chrome, Edge and Firefox and made sure that all functionality is compatible with these browsers.
 
 
+## Sources
+[Academind](https://academind.com/learn/react/snippets/navbar-side-drawer/) - Responsive navigation bar using React
+[W3Schools](https://www.w3schools.com/)
+[React JS Documentation](https://reactjs.org/docs/getting-started.html)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
