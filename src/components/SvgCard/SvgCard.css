@@ -3,18 +3,19 @@
   width: auto;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
+  grid-column-gap: 1%;
   justify-content: space-between;
-  border: calc(2px + 0.4vw) solid;
-  border-radius: calc(2px + 0.8vw);
-  box-shadow: 0 7vw 2vw -5vw rgba(0, 0, 0, 0.5);
   margin-top: 4vh;
 }
 
 .SvgCard > div {
   display: flex;
-  width: 30vw;
-  height: 22.5vw;
-  margin: 1%;
+  width: 35vw;
+  height: 26.25vw;
+  box-shadow: 0 6.5vw 2vw -5vw rgba(0, 0, 0, 0.5);
+  border: calc(2px + 0.4vw) solid;
+  border-radius: calc(2px + 0.8vw);
+  padding: 2px;
 }
 
 .Svg {
@@ -49,19 +50,35 @@
   opacity: 0.4;
 }
 
+h1 {
+  font-size: calc(10px + 2vw);
+}
+
+p {
+  font-size: calc(6px + 1vw);
+}
+
 @media screen and (max-width: 550px) {
   .SvgCard {
     grid-template-rows: 50% 50%;
     grid-template-columns: 1fr;
+    grid-row-gap: 1%;
     align-content: space-between;
   }
   .SvgCard > div {
     width: 60vw;
     height: 45vw;
-    min-width: 200px;
-    min-height: 150px;
+    min-width: 160px;
+    min-height: 120px;
   }
   .RedirectButtons {
     font-size: 10vw;
+  }
+  h1 {
+    font-size: calc(10px + 3vw);
+  }
+
+  p {
+    font-size: calc(6px + 1.5vw);
   }
 }

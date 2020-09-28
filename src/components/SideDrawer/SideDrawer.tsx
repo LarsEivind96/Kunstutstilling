@@ -20,9 +20,9 @@ const sideDrawer = (props: any) => {
             style={{
               background:
                 "linear-gradient(to right, " +
-                appContext.theme.linGradH1 +
+                appContext.theme.primary +
                 ", " +
-                appContext.theme.linGradH2 +
+                appContext.theme.secondary +
                 ")",
             }}
           >

@@ -8,8 +8,8 @@ export interface AppContextInterface {
 
 export const themes = {
   dark: {
-    primary: "black",
-    secondary: "#333333",
+    primary: "#333333",
+    secondary: "black",
     text: "white",
     linGradH1: "black",
     linGradH2: "#333333",
@@ -17,43 +17,28 @@ export const themes = {
       "url(" +
       "https://lesilets.com/wp-content/uploads/2018/04/1096907-cool-dark-background-2560x1600-for-tablet.jpg" +
       ")",
-    bgSize: "100%",
   },
   space: {
-    primary: "grey",
-    secondary: "#993933",
+    primary: "#343d46",
+    secondary: "#121212",
     text: "white",
-    linGradH1: "grey",
-    linGradH2: "#111111",
     bgImage: "url(" + "https://wallpapercave.com/wp/wp2917445.jpg" + ")",
-    bgSize: "100%",
   },
   beach: {
-    primary: "#c2b280",
+    primary: "white",
     secondary: "#0077be",
     text: "black",
-    linGradH1: "red",
-    linGradH2: "white",
-    bgImage:
-      "url(" +
-      "https://image.tmdb.org/t/p/original/n96EJQ8KzFVAFZo8PWVq4mjcyTK.jpg" +
-      ")",
-    bgSize: "100%",
+    bgImage: "url(" + "https://image.tmdb.org/t/p/original/n96EJQ8KzFVAFZo8PWVq4mjcyTK.jpg" + ")",
   },
   crazy: {
     primary: "yellow",
-    secondary: "purple",
+    secondary: "orange",
     text: "black",
-    linGradH1: "pink",
-    linGradH2: "blue",
     bgImage:
       "url(" +
       "https://www.wallpapers4u.org/wp-content/uploads/crazy_frog_rocket_rays_teeth_fail_1763_1920x1080.jpg" +
       ")",
-    bgSize: "100%",
   },
 };
 
-export const ThemeContext = React.createContext<AppContextInterface | null>(
-  null
-);
+export const ThemeContext = React.createContext<AppContextInterface | null>(null);
