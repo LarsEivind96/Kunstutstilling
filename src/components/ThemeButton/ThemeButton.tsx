@@ -12,7 +12,13 @@ function ThemeButton(props: props) {
       {(appContext) =>
         appContext && (
           <div>
-            <button id="button" onClick={() => appContext.toggleTheme(props.theme)}>
+            <button
+              id="button"
+              onClick={() => {
+                appContext.toggleTheme(props.theme);
+                sessionStorage.setItem("theme", JSON.stringify(props.theme));
+              }}
+            >
               {props.name}
             </button>
           </div>

@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
@@ -13,7 +12,9 @@ import ThemeButtonContainer from "./components/ThemeButton/ThemeButtonContainer"
 
 function App() {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
-  const [theme, setTheme] = useState(themes.dark);
+  const selectedTheme = sessionStorage.getItem("theme");
+  const startTheme = selectedTheme ? JSON.parse(selectedTheme) : themes.dark;
+  const [theme, setTheme] = useState(startTheme);
 
   const drawerToggleClickHandler = () => {
     setSideDrawerOpen(!sideDrawerOpen);
@@ -33,12 +34,7 @@ function App() {
       <div
         className="App"
         style={{
-          background:
-            "linear-gradient(to left, " +
-            context.theme.primary +
-            ", " +
-            context.theme.linGradH2 +
-            ")",
+          background: "linear-gradient(to left, " + context.theme.primary + ", " + context.theme.linGradH2 + ")",
         }}
       >
         <div className="Container" style={{ background: "white" }}>
@@ -51,7 +47,6 @@ function App() {
         <Router>
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
             <Route path="/gallery" component={Gallery} />
             {/* Make sure this route is at the bottom */}
             <Route path="/:index" exact component={Home} />
