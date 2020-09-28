@@ -36,9 +36,10 @@ The user interface is tested on a mobile device with both horizontal and vertica
 
 
 ## Sources
-[Academind](https://academind.com/learn/react/snippets/navbar-side-drawer/) - Responsive navigation bar using React.\
 [W3Schools](https://www.w3schools.com/)\
-[React JS Documentation](https://reactjs.org/docs/getting-started.html)
+[React JS Documentation](https://reactjs.org/docs/getting-started.html)\
+[Academind](https://academind.com/learn/react/snippets/navbar-side-drawer/) - Responsive navigation bar using React.
+
 
 
 ## Available Scripts
