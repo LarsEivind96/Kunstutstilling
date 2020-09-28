@@ -12,7 +12,7 @@ For the Gallery and Favorite screens, the SVGs are either displayed in a 3x3, 2x
 
 ## Layout
 
-We have used a combination of CSS grid and a flexbox layout through the website. The navigation bar and the buttons to show the next/previous SVG and save an SVG as favorite is positioned using a flexbox layout. This section has a one-dimensional layout and a flexbox layout is perfect to position elements on one dimension. The series of SVGs displayed in the “Gallery” and “Favorites” pages are controlled using CSS-grid – a natural choice as the SVGs are displayed in a two-dimensional grid.
+We have used a combination of CSS grid and a flexbox layout throughout the website. The navigation bar, the buttons to show the next/previous SVG, and button used to mark an SVG as a favorite is positioned using a flexbox layout. This section has a one-dimensional layout and a flexbox layout is perfect to position elements on one dimension. The series of SVGs displayed in the “Gallery” and “Favorites” pages are controlled using CSS-grid – a natural choice as the SVGs are displayed in a two-dimensional grid. CSS-grid also made it easy have variable amounts of SVGs in the grids.
 
 ## SVG
 
@@ -22,7 +22,7 @@ All figures are created using SVG. The continuous animation is either controlled
 
 We have implemented both local storage and sessions storage in our project.
 
-Local storage is used for storing the user’s favorite SVGs. When the user presses the “Save as favorite” button on a specific SVG, a "favorite" key pointing to the index of the current SVG is stored in local storage. When a user enters the website (Home), a check is performed to see whether the user have one or more favorite SVGs stored in local storage. If so, a random favorite is displayed, otherwise any random SVG is shown.
+Local storage is used for storing the user’s favorite SVGs. When the user presses the “Favorite” button on a specific SVG, a "favorite" key pointing to the index of the current SVG is stored in local storage. If the index of the current SVG is found in the local storage for favorites it is "unfavorited", otherwise, the SVG is added to the favorites. When a user enters the website (Home), a check is performed to see whether the user have one or more favorite SVGs stored in local storage. If so, a random favorite is displayed, otherwise any random SVG is shown.
 
 Session storage is used for saving the current theme displayed on the page. A theme is an object containing parameters describing what colors to use on the page. The object is stored in session storage as a JSON string and is parsed back to the original object when fetched. We were required to store the theme in session storage to maintain the same theme when routing between different components.
 
