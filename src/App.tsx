@@ -35,8 +35,7 @@ function App() {
       <div
         className="App"
         style={{
-          background:
-            "linear-gradient(to left, " + context.theme.primary + ", " + context.theme.linGradH2 + ")",
+          background: context.theme.bgImage,
         }}
       >
         <Toolbar drawerClickHandler={drawerToggleClickHandler} />

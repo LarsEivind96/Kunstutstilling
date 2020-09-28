@@ -43,12 +43,8 @@ function Home(props) {
           <div
             className="PageContainer"
             style={{
-              background:
-                "linear-gradient(to left, " +
-                appContext.theme.primary +
-                ", " +
-                appContext.theme.linGradH2 +
-                ")",
+              background: appContext.theme.bgImage,
+              backgroundRepeat: "none",
             }}
           >
             <SvgCard currentSvg={currentSvg} changeSvg={changeSvg} />
