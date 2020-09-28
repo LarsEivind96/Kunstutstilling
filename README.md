@@ -8,7 +8,11 @@ Font sizes are either set to a size which fits all screen sizes, dynamically adj
 
 For the Gallery and Favorite screens, the SVGs are either displayed in a 3x3, 2x4 or 1x8 grid depending on the size of the screen.
 
+## Layout
+We have used a combination of CSS grid and a flexbox layout through the website. The navigation bar and the buttons to show the next/previous SVG and save an SVG as favorite is positioned using a flexbox layout. This section has a one-dimensional layout and a flexbox layout is perfect to position elements on one dimension. The series of SVGs displayed in the “Gallery” and “Favorites” pages are controlled using CSS-grid – a natural choice as the SVGs are displayed in a two-dimensional grid.
+
 ## SVG
+All figures are created using SVG. The continuous animation is either controlled through the SVG animation or animateTransform elements, or by CSS keyframes.
 
 ## HTML Web storage 
 
@@ -30,9 +34,13 @@ For testing we are using JEST along with the React Testing Library. A unit test 
 
 The user interface is tested on a mobile device with both horizontal and vertical orientation, as well as on a bigger computer screen. We have performed cross-browser testing on Chrome, Edge and Firefox and made sure that all functionality is compatible with these browsers.
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.idi.ntnu.no/#https://gitlab.stud.idi.ntnu.no/it2810-h20/team-37/prosjekt2) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sources
+[W3Schools](https://www.w3schools.com/)\
+[React JS Documentation](https://reactjs.org/docs/getting-started.html)\
+[Academind](https://academind.com/learn/react/snippets/navbar-side-drawer/) - Responsive navigation bar using React.
+
+
 
 ## Available Scripts
 
