@@ -45,9 +45,8 @@
   text-decoration: none;
 }
 
-.navLink {
-  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
-    -1px -1px 0 #000;
+.navLink:hover {
+  opacity: 0.4;
 }
 
 .toolbar_navigation-items a:hover,

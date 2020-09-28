@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 import FavoritesGrid from "../components/FavoritesGrid/FavoritesGrid";
+import { ThemeContext } from "../constants/Themes";
 
 function Favorites() {
   const [hasFavorites, setHasFavorites] = useState(false);
@@ -12,17 +13,23 @@ function Favorites() {
   }, []);
 
   return (
-    <div className="PageContainer">
-      {!hasFavorites && (
-        <div style={{ color: "white", fontSize: "22px" }}>
-          You don't have any favorites..maybe add some:{" "}
-          <a style={{ color: "white" }} href="/">
-            Home
-          </a>
-        </div>
-      )}
-      {hasFavorites && <FavoritesGrid />}
-    </div>
+    <ThemeContext.Consumer>
+      {(appContext) =>
+        appContext && (
+          <div className="PageContainer">
+            {!hasFavorites && (
+              <div style={{ color: appContext.theme.text, fontSize: "22px" }}>
+                You don't have any favorites..maybe add some:{" "}
+                <a style={{ color: appContext.theme.text }} href="/">
+                  Home
+                </a>
+              </div>
+            )}
+            {hasFavorites && <FavoritesGrid />}
+          </div>
+        )
+      }
+    </ThemeContext.Consumer>
   );
 }
 
