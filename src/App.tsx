@@ -42,9 +42,9 @@ function App() {
         <SideDrawer show={sideDrawerOpen} />
         {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
         <div className="moodContainer">
-          <AudioPlayer />
           <ThemeButtonContainer />
         </div>
+        <AudioPlayer />
         <Router>
           <Switch>
             <Route path="/" exact component={Home} />

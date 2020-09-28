@@ -43,7 +43,6 @@ const sideDrawer = (props: any) => {
               <li>
                 <div className="moodContainer2">
                   <ThemeButtonContainer />
-                  <AudioPlayer />
                 </div>
               </li>
             </ul>
