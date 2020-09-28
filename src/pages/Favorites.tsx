@@ -6,7 +6,7 @@ import Svgs from "../svg/Svgs";
 function Favorites() {
   return (
     <div className="Favorites">
-      <Favorites />
+      <FavoritesGrid />
     </div>
   );
 }

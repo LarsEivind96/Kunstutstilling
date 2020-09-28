@@ -12,7 +12,7 @@ class FavButton extends React.Component<ButtonProps, ButtonState> {
   saveFavorite = () => {
     var currentFav = localStorage.getItem("favorite");
     const clickedFav = this.props.index;
-    if (currentFav == null) {
+    if (currentFav === null) {
       console.log("første favoritt", localStorage.getItem("favorite"));
       const favoriteList = [this.props.index];
       localStorage.setItem("favorite", this.props.index);

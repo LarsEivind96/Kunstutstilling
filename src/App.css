@@ -42,3 +42,9 @@ body {
   width: 100%;
   overflow-y: scroll;
 }
+
+.Favorites {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}

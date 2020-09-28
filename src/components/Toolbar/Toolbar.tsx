@@ -13,12 +13,20 @@ const toolbar = (props: any) => (
         <header
           className="toolbar"
           style={{
-            background: "linear-gradient(to right, " + appContext.theme.linGradH1 + ", " + appContext.theme.linGradH2 + ")",
+            background:
+              "linear-gradient(to right, " +
+              appContext.theme.linGradH1 +
+              ", " +
+              appContext.theme.linGradH2 +
+              ")",
           }}
         >
           <nav className="toolbar__navigation">
             <div className="toolbar__toggle-button">
-              <DrawerToggleButton click={props.drawerClickHandler} textColor={appContext.theme.text} />
+              <DrawerToggleButton
+                click={props.drawerClickHandler}
+                textColor={appContext.theme.text}
+              />
             </div>
             <div className="toolbar__logo">
               <a href="/" style={{ color: appContext.theme.text }}>
@@ -29,13 +37,30 @@ const toolbar = (props: any) => (
             <div className="toolbar_navigation-items">
               <ul>
                 <li>
-                  <a className="navLink" href="/" style={{ color: appContext.theme.text }}>
+                  <a
+                    className="navLink"
+                    href="/"
+                    style={{ color: appContext.theme.text }}
+                  >
                     Home
                   </a>
                 </li>
                 <li>
-                  <a className="navLink" href="/gallery" style={{ color: appContext.theme.text }}>
+                  <a
+                    className="navLink"
+                    href="/gallery"
+                    style={{ color: appContext.theme.text }}
+                  >
                     Gallery
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="navLink"
+                    href="/favorites"
+                    style={{ color: appContext.theme.text }}
+                  >
+                    Favorites
                   </a>
                 </li>
               </ul>
