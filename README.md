@@ -5,7 +5,7 @@ Below is a description of how the website is set up, its key features, and how w
 
 We have implemented both local storage and sessions storage in our project. 
 
-Local storage is used for storing the user’s favorite SVG. When the user presses the “Save as favorite” button on a specific SVG, a "favorite" key pointing to the index of the current SVG in our list of SVGs are stored in local storage. When a user enters the website (Home), a check is performed to see whether the user have a favorite SVG stored in local storage. If so, that SVG is displayed, otherwise a random SVG is shown. 
+Local storage is used for storing the user’s favorite SVGs. When the user presses the “Save as favorite” button on a specific SVG, a "favorite" key pointing to the index of the current SVG in our list of SVGs are stored in local storage. When a user enters the website (Home), a check is performed to see whether the user have one or more favorite SVGs stored in local storage. If so, a random favorite is displayed, otherwise any random SVG is shown. 
 
 Session storage is used for saving the current theme displayed on the page. A theme is an object containing parameters describing what colors to use on the page. The object is stored in session storage as a JSON string and is parsed back to the original object when fetched. We were required to store the theme in session storage to maintain the same theme when routing between different components.
 
