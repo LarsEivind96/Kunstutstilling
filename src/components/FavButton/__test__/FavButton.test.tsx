@@ -14,7 +14,7 @@ it("button renders without failure", () => {
 
 // Snapshot test 1
 it("correlates to snapshot 1", () => {
-  const { container } = render(<FavButton index="1" label="Save as favorite" />);
+  const { container } = render(<FavButton index="1" label="❤" />);
   expect(container).toMatchSnapshot();
 });
 
