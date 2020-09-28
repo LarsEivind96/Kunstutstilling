@@ -1,6 +1,15 @@
 # Documentation
 Below is a description of how the website is set up, its key features, and how we have complied to the technological requirements for this project.
 
+## Responsive design
+To ensure a responsive user interface we use viewport alongside media queries to dynamically scale and position elements on the screen. The navigation bar switches between showing the navigation links (Home, Gallery, Favorites) and displaying a side drawer which can be toggled to display the same links. The SVG element and the text on the home screen is displayed horizontally next to each other on a big screen, and underneath one another on a mobile screen. In addition, the buttons to change theme and the sound control panel is either displayed at the bottom of the page (on a big screen), or in the side drawer (on a small screen).
+
+Font sizes are either set to a size which fits all screen sizes, dynamically adjusted using viewport, or changed across screen sizes through media queries. 
+
+For the Gallery and Favorite screens, the SVGs are either displayed in a 3x3, 2x4 or 1x8 grid depending on the size of the screen.
+
+## SVG
+
 ## HTML Web storage 
 
 We have implemented both local storage and sessions storage in our project. 
