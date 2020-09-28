@@ -4,7 +4,7 @@ Below is a description of how the website is set up, its key features, and how w
 ## Responsive design
 To ensure a responsive user interface we use viewport alongside media queries to dynamically scale and position elements on the screen. The navigation bar switches between showing the navigation links (Home, Gallery, Favorites) and displaying a side drawer which can be toggled to display the same links. The SVG element and the text on the home screen is displayed horizontally next to each other on a big screen, and underneath one another on a mobile screen. In addition, the buttons to change theme and the sound control panel is either displayed at the bottom of the page (on a big screen), or in the side drawer (on a small screen).
 
-Font sizes are either set to a size which fits all screen sizes, dynamically adjusted using viewport, or changed across screen sizes through media queries. 
+Font sizes are either set to a size which fits all screen sizes, dynamically adjusted using viewport, or set to fixed pixel sizes depending on the screen size using media queries.
 
 For the Gallery and Favorite screens, the SVGs are either displayed in a 3x3, 2x4 or 1x8 grid depending on the size of the screen.
 
@@ -23,7 +23,7 @@ Session storage is used for saving the current theme displayed on the page. A th
 We are using the built-in fetch()-call from the Javascript API to fetch poems from https://poetrydb.org/. Every time a user switches to a different SVG on the Home screen, a random poem with 10 lines is fetched asynchronously. 
 
 
-(Skrive noe om hvordan lyd blir hentet - Larsi)
+Audio is fetched using the built-in HTML audio tag pointing to mp3 files in the project.
 
 ## Testing
 For testing we are using JEST along with the React Testing Library. A unit test is written for the FavButton-class (“Save as favorite” button), which ensures that the button is rendered correctly to the screen. Additionally, two snapshot tests are written for that same class, which ensures that the component is constructed with the appropriate parameters.
