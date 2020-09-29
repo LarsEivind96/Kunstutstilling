@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+
+  <defs>
+    <radialGradient id="pendulum">
+        <stop offset="20%" stop-color="grey"/>
+        <stop offset="100%" stop-color="silver"/>
+    </radialGradient>
+    <radialGradient id="poles1">
+        <stop offset="20%" stop-color="black"/>
+        <stop offset="100%" stop-color="silver"/>
+    </radialGradient>
+    <radialGradient id="board">
+        <stop offset="20%" stop-color="#855e42"/>
+        <stop offset="140%" stop-color="#CAA472"/>
+    </radialGradient>
+    <linearGradient id="poles" x1="0" y1="0" x2="0" y2="100%">
+        <stop offset="0%"  stop-color="silver"/>
+        <stop offset="50%"  stop-color="grey"/>
+        <stop offset="90%"  stop-color="black"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M80 300 L130 230 L270 230 L320 300 Z" fill='rgba(30, 30, 30, 1)'/>
+  <g className='poles' fill='url(#poles)' >
+    <path d="M135 235 L145 235 L185 10 L175 10 Z" />
+    <path d="M265 235 L255 235 L215 10 L225 10 Z" />
+    <path d="M170 15 L230 15 L230 5 L170 5 Z" />
+    <path d="M195 10 L205 10 L207 0 L193 0 Z" />
+  </g>
+  <g fill='url(#pendulum)' stroke='gold'>
+    <g class='pendulum' id='o'>
+      <path d="M200 0 L200 152 Z" />
+      <rect width='5' height='5' x='197.5' y='139'/>
+      <circle cx='200' cy='152' r='10' />
+    </g>
+    <g class='pendulum' id='n'>
+      <path d="M200 0 L200 159 Z" />
+      <rect width='5' height='5' x='197.5' y='145'/>
+      <circle cx='200' cy='159' r='10.4' />
+    </g>
+    <g class='pendulum' id='m'>
+      <path d="M200 0 L200 166 Z" />
+      <rect width='5' height='5' x='197.5' y='152'/>
+      <circle cx='200' cy='166' r='10.6' />
+    </g>
+    <g class='pendulum' id='l'>
+      <path d="M200 0 L200 173 Z" />
+      <rect width='5' height='5' x='197.5' y='160'/>
+      <circle cx='200' cy='173' r='10.8' />
+    </g>
+    <g class='pendulum' id='k'>
+      <path d="M200 0 L200 180 Z" />
+      <rect width='5' height='5' x='197.5' y='166'/>
+      <circle cx='200' cy='180' r='11' />
+    </g>
+    <g class='pendulum' id='j'>
+      <path d="M200 0 L200 187 Z" />
+      <rect width='5' height='5' x='197.5' y='172'/>
+      <circle cx='200' cy='187' r='11.2' />
+    </g>
+    <g class='pendulum' id='i'>
+      <path d="M200 0 L200 194 Z" />
+      <rect width='5' height='5' x='197.5' y='179'/>
+      <circle cx='200' cy='194' r='11.4' />
+    </g>
+    <g class='pendulum' id='h'>
+      <path d="M200 0 L200 201 Z" />
+      <rect width='5' height='5' x='197.5' y='186'/>
+      <circle cx='200' cy='201' r='11.6' />
+    </g>
+    <g class='pendulum' id='g'>
+      <path d="M200 0 L200 208 Z" />
+      <rect width='5' height='5' x='197.5' y='193'/>
+      <circle cx='200' cy='208' r='11.8' />
+    </g>
+    <g class='pendulum' id='f'>
+      <path d="M200 0 L200 215 Z" />
+      <rect width='5' height='5' x='197.5' y='200'/>
+      <circle cx='200' cy='215' r='12' />
+    </g>
+    <g class='pendulum' id='e'>
+      <path d="M200 0 L200 222 Z" />
+      <rect width='5' height='5' x='197.5' y='206'/>
+      <circle cx='200' cy='222' r='12.2' />
+    </g>
+    <g class='pendulum' id='d'>
+      <path d="M200 0 L200 229 Z" />
+      <rect width='5' height='5' x='197.5' y='213'/>
+      <circle cx='200' cy='229' r='12.4' />
+    </g>
+    <g class='pendulum' id='c'>
+      <path d="M200 0 L200 236 Z" />
+      <rect width='5' height='5' x='197.5' y='220'/>
+      <circle cx='200' cy='236' r='12.6' />
+    </g>
+    <g class='pendulum' id='b'>
+      <path d="M200 0 L200 243 Z" />
+      <rect width='5' height='5' x='197.5' y='227'/>
+      <circle cx='200' cy='243' r='12.8' />
+    </g>
+    <g class='pendulum' id='a'>
+      <path d="M200 0 L200 250 Z" />
+      <rect width='5' height='5' x='197.5' y='234'/>
+      <circle cx='200' cy='250' r='13' />
+    </g>
+    
+  </g>
+  
+  <g className='poles' fill='url(#poles)'>
+    <path d="M85 300 L95 300 L150 0 L140 0 Z" transform='translate(-20, 0)' />
+    <path d="M315 300 L305 300 L250 0 L260 0 Z" transform='translate(20, 0)'/>
+  </g>
+
+  <style>
+
+            .pendulum {
+              transform-origin: top center;
+            }
+            #a {
+              animation: rotation-earth calc(60s / 51) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #b {
+              animation: rotation-earth calc(60s / 52) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #c {
+              animation: rotation-earth calc(60s / 53) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #d {
+              animation: rotation-earth calc(60s / 54) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #e {
+              animation: rotation-earth calc(60s / 55) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #f {
+              animation: rotation-earth calc(60s / 56) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #g {
+              animation: rotation-earth calc(60s / 57) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #h {
+              animation: rotation-earth calc(60s / 58) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #i {
+              animation: rotation-earth calc(60s / 59) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #j {
+              animation: rotation-earth calc(60s / 60) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #k {
+              animation: rotation-earth calc(60s / 61) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #l {
+              animation: rotation-earth calc(60s / 62) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #m {
+              animation: rotation-earth calc(60s / 63) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #n {
+              animation: rotation-earth calc(60s / 64) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+            #o {
+              animation: rotation-earth calc(60s / 65) ease-in-out infinite;
+              animation-direction: alternate;
+            }
+
+
+            /*animation*/
+
+
+            @keyframes rotation-earth {
+                0%{
+                    transform: rotate(25deg) ;
+                }
+                100%{
+                    transform: rotate(-25deg);
+                }
+            }
+    </style>
+
+</svg>

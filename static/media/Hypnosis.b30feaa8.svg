@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+
+    <g id="circles" >
+        <circle id="white18" cx="310" cy="150" r="360" fill="white" />
+        <circle id="black18" cx="310" cy="150" r="350" style="fill:black" />
+        <circle id="white17" cx="305" cy="150" r="340" fill="white" />
+        <circle id="black17" cx="300" cy="150" r="330" style="fill:black" />
+        <circle id="white16" cx="295" cy="150" r="320" fill="white" />
+        <circle id="black16" cx="290" cy="150" r="310" style="fill:black" />
+        <circle id="white15" cx="285" cy="150" r="300" fill="white" />
+        <circle id="black15" cx="280" cy="150" r="290" style="fill:black" />
+        <circle id="white14" cx="275" cy="150" r="320" fill="white" />
+        <circle id="black14" cx="270" cy="150" r="305" style="fill:black" />
+        <circle id="white13" cx="265" cy="150" r="290" fill="white" />
+        <circle id="black13" cx="260" cy="150" r="275" style="fill:black" />
+        <circle id="white12" cx="255" cy="150" r="260" fill="white" />
+        <circle id="black12" cx="250" cy="150" r="245" style="fill:black" />
+        <circle id="white11" cx="245" cy="150" r="230" fill="white" />
+        <circle id="black11" cx="240" cy="150" r="215" style="fill:black" />
+        <circle id="white10" cx="235" cy="150" r="200" fill="white" />
+        <circle id="black10" cx="240" cy="150" r="190" style="fill:black" />
+        <circle id="white9" cx="245" cy="150" r="180" fill="white" />
+        <circle id="black9" cx="250" cy="150" r="170" style="fill:black" />
+        <circle id="white8" cx="255" cy="150" r="160" fill="white" />
+        <circle id="black8" cx="260" cy="150" r="150" style="fill:black" />
+        <circle id="white7" cx="265" cy="150" r="140" fill="white" />
+        <circle id="black7" cx="270" cy="150" r="130" style="fill:black" />
+        <circle id="white6" cx="275" cy="150" r="120" fill="white" />
+        <circle id="black6" cx="270" cy="150" r="110" style="fill:black" />
+        <circle id="white5" cx="260" cy="150" r="100" fill="white" />
+        <circle id="black5" cx="255" cy="150" r="90" style="fill:black" />
+        <circle id="white4" cx="250" cy="150" r="80" fill="white" />
+        <circle id="black4" cx="245" cy="150" r="70" style="fill:black" />
+        <circle id="white3" cx="240" cy="150" r="60" fill="white" />
+        <circle id="black3" cx="235" cy="150" r="50" style="fill:black" />
+        <circle id="white2" cx="230" cy="150" r="40" fill="white" />
+        <circle id="black2" cx="225" cy="150" r="30" style="fill:black" />
+        <circle id="white1" cx="220" cy="150" r="20" fill="white" />
+        <circle id="black1" cx="215" cy="150" r="12" style="fill:black" />
+    </g>
+
+    <animateTransform
+        attributeName="transform"
+        href="#circles"
+        type="rotate"
+        from="0 200 150"
+        to="360 200 150"
+        dur="4.5s"
+        repeatCount="indefinite"
+    />
+    <animate href="#white18" attributeName="fill" values="white;black;white" dur="0.7s" begin="1.8s" repeatCount="indefinite" />
+    <animate href="#white17" attributeName="fill" values="white;black;white" dur="0.7s" begin="1.7s" repeatCount="indefinite" />
+    <animate href="#white16" attributeName="fill" values="white;black;white" dur="0.7s" begin="1.6s" repeatCount="indefinite" />
+    <animate href="#white15" attributeName="fill" values="white;black;white" dur="0.7s" begin="1.5s" repeatCount="indefinite" />
+    <animate href="#white14" attributeName="fill" values="white;black;white" dur="0.7s" begin="1.4s" repeatCount="indefinite" />
+    <animate href="#white13" attributeName="fill" values="white;black;white" dur="0.7s" begin="1.3s" repeatCount="indefinite" />
+    <animate href="#white12" attributeName="fill" values="white;black;white" dur="0.7s" begin="1.2s" repeatCount="indefinite" />
+    <animate href="#white11" attributeName="fill" values="white;black;white" dur="0.7s" begin="1.1s" repeatCount="indefinite" />
+    <animate href="#white10" attributeName="fill" values="white;black;white" dur="0.7s" begin="1.0s" repeatCount="indefinite" />
+    <animate href="#white9" attributeName="fill" values="white;black;white" dur="0.7s" begin="0.9s" repeatCount="indefinite" />
+    <animate href="#white8" attributeName="fill" values="white;black;white" dur="0.7s" begin="0.8s" repeatCount="indefinite" />
+    <animate href="#white7" attributeName="fill" values="white;black;white" dur="0.7s" begin="0.7s" repeatCount="indefinite" />
+    <animate href="#white6" attributeName="fill" values="white;black;white" dur="0.7s" begin="0.6s" repeatCount="indefinite" />
+    <animate href="#white5" attributeName="fill" values="white;black;white" dur="0.7s" begin="0.5s" repeatCount="indefinite" />
+    <animate href="#white4" attributeName="fill" values="white;black;white" dur="0.7s" begin="0.4s" repeatCount="indefinite" />
+    <animate href="#white3" attributeName="fill" values="white;black;white" dur="0.7s" begin="0.3s" repeatCount="indefinite" />
+    <animate href="#white2" attributeName="fill" values="white;black;white" dur="0.7s" begin="0.2s" repeatCount="indefinite" />
+    <animate href="#white1" attributeName="fill" values="white;black;white" dur="0.7s" begin="0.1s" repeatCount="indefinite" />
+
+</svg>

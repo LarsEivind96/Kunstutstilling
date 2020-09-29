@@ -1,0 +1,490 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <radialGradient id="star">
+        <stop offset="20%" stop-color="white"/>
+        <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+    <rect width="400" height='300' fill='black'/>
+
+    <g stroke='white' visibility='hidden' transform='translate(0, 100)'>
+      <path d="M100 30 L110 30 Z" />
+      <animateMotion begin='5s' dur='0.5s' repeatCount='1' path="M0 0 L150 0 " />
+      <animate attributeName='visibility' begin='4.9s' from='hidden' to='visible' dur='0.6s' repeatCount='1' />
+    </g>
+    <g stroke='white' visibility='hidden' transform='translate(0, 200)'>
+      <path d="M100 30 L110 30 Z" />
+      <animateMotion begin='15s' dur='0.5s' repeatCount='1' path="M0 0 L150 0 " />
+      <animate attributeName='visibility' begin='14.9s' from='hidden' to='visible' dur='0.6s' repeatCount='1' />
+    </g>
+    <g stroke='white' visibility='hidden' transform='translate(0, 170)'>
+      <path d="M100 30 L110 30 Z" />
+      <animateMotion begin='2s' dur='0.5s' repeatCount='1' path="M-200 0 L200 0 " />
+      <animate attributeName='visibility' begin='1.9s' from='hidden' to='visible' dur='0.6s' repeatCount='1' />
+    </g>
+    <g stroke='white' visibility='hidden' transform='translate(0, 30)'>
+      <path d="M30 30 L35 30 Z" />
+      <animateMotion begin='20s' dur='0.5s' repeatCount='1' path="M0 0 L370 0 " />
+      <animate attributeName='visibility' begin='19.9s' from='hidden' to='visible' dur='0.6s' repeatCount='1' />
+    </g>
+    <g stroke='white' visibility='hidden' transform='translate(0, 70)'>
+      <path d="M100 30 L110 30 Z" />
+      <animateMotion begin='10s' dur='0.5s' repeatCount='1' path="M-200 10 L250 0 " />
+      <animate attributeName='visibility' begin='9.9s' from='hidden' to='visible' dur='0.6s' repeatCount='1' />
+    </g>
+    <g stroke='white' visibility='hidden' transform='translate(-100, 130)'>
+      <path d="M100 30 L110 30 Z" />
+      <animateMotion begin='30s' dur='0.5s' repeatCount='1' path="M-200 10 L250 0 " />
+      <animate attributeName='visibility' begin='29.9s' from='hidden' to='visible' dur='0.6s' repeatCount='1' />
+    </g>
+    <g stroke='white' visibility='hidden' transform='translate(0, 100)'>
+      <path d="M100 30 L110 30 Z" />
+      <animateMotion begin='50s' dur='0.5s' repeatCount='1' path="M0 0 L150 0 " />
+      <animate attributeName='visibility' begin='49.9s' from='hidden' to='visible' dur='0.6s' repeatCount='1' />
+    </g>
+
+    <g fill='url(#star)'>
+      <circle cx='100' cy='100' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='110' cy='140' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='140' cy='110' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='130' cy='190' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='10' cy='10' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='20' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='350' cy='290' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='290' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+
+      <circle cx='5' cy='280' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='15' cy='290' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='30' cy='200' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='50' cy='170' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='180' cy='270' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='390' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='385' cy='290' >
+        <animate attributeName='r' values='2;3;2' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='380' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+    </g>
+
+    <g fill='url(#star)' transform='rotate(90, 200, 150) scale(0.5)'>
+      <circle cx='100' cy='100' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='110' cy='140' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='140' cy='110' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='130' cy='190' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='10' cy='10' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='20' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='350' cy='290' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='290' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+
+      <circle cx='5' cy='280' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='15' cy='290' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='30' cy='200' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='50' cy='170' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='180' cy='270' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='390' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='385' cy='290' >
+        <animate attributeName='r' values='2;3;2' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='380' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+    </g>
+
+    <g fill='url(#star)' transform='rotate(180, 200, 150) scale(1.2)'>
+      <circle cx='100' cy='100' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='110' cy='140' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='140' cy='110' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='130' cy='190' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='10' cy='10' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='20' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='350' cy='290' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='290' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+
+      <circle cx='5' cy='280' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='15' cy='290' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='30' cy='200' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='50' cy='170' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='180' cy='270' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='390' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='385' cy='290' >
+        <animate attributeName='r' values='2;3;2' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='380' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+    </g>
+
+
+    <g fill='url(#star)' transform='rotate(-160, 200, 150) scale(1.4)'>
+      <circle cx='100' cy='100' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='110' cy='140' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='140' cy='110' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='130' cy='190' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='10' cy='10' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='20' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='350' cy='290' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='290' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+
+      <circle cx='5' cy='280' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='15' cy='290' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='30' cy='200' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='50' cy='170' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='180' cy='270' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='390' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='385' cy='290' >
+        <animate attributeName='r' values='2;3;2' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='380' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+    </g>
+
+
+    <g fill='url(#star)' transform='rotate(90, 200, 150) scale(0.5) translate(50, 300)'>
+      <circle cx='100' cy='100' >
+        <animate attributeName='r' values='1.5;3;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='110' cy='140' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='140' cy='110' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='130' cy='190' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='10' cy='10' >
+        <animate attributeName='r' values='1.5;3;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='20' cy='90' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='350' cy='290' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='290' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+
+      <circle cx='5' cy='280' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='15' cy='290' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='30' cy='200' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='50' cy='170' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='180' cy='270' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='390' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='385' cy='290' >
+        <animate attributeName='r' values='2;3;2' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='380' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+    </g>
+
+      
+    <g fill='url(#star)' transform='rotate(0, 200, 150) translate(100, 0)'>
+      <circle cx='100' cy='100' >
+        <animate attributeName='r' values='1.5;3;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='110' cy='140' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='140' cy='110' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='130' cy='190' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='10' cy='10' >
+        <animate attributeName='r' values='1.5;3;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='20' cy='90' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='350' cy='290' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='290' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+
+      <circle cx='5' cy='280' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='15' cy='290' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='30' cy='200' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='50' cy='170' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='180' cy='270' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='390' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='385' cy='290' >
+        <animate attributeName='r' values='2;3;2' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='380' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>
+    </g>
+
+    <g fill='url(#star)' transform='rotate(0, 200, 150) scale(0.7) translate(110, 220)'>
+      <circle cx='100' cy='100' >
+        <animate attributeName='r' values='1.5;3;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='110' cy='140' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='140' cy='110' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='130' cy='190' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='10' cy='10' >
+        <animate attributeName='r' values='1.5;3;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='20' cy='90' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='350' cy='290' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='290' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+
+      <circle cx='5' cy='280' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='15' cy='290' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='30' cy='200' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='50' cy='170' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='180' cy='270' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='390' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='385' cy='290' >
+        <animate attributeName='r' values='2;3;2' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='380' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>
+    </g>
+
+    <g fill='url(#star)' transform='rotate(0, 200, 150) scale(0.7) translate(280, 220)'>
+      <circle cx='100' cy='100' >
+        <animate attributeName='r' values='1.5;3;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='110' cy='140' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='140' cy='110' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='130' cy='190' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='10' cy='10' >
+        <animate attributeName='r' values='1.5;3;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='20' cy='90' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='350' cy='290' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='290' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+
+      <circle cx='5' cy='280' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='15' cy='290' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='30' cy='200' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='50' cy='170' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='180' cy='270' >
+        <animate attributeName='r' values='1.5;2.5;1.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='390' cy='90' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='385' cy='290' >
+        <animate attributeName='r' values='2;3;2' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='380' cy='10' >
+        <animate attributeName='r' values='1.5;2;1.5' dur='1s' repeatCount='indefinite' />
+      </circle>
+    </g>
+
+
+    <g id='karlsvogna' fill='url(#star)' transform='scale(1.1) translate(-187, -185)'>
+      <circle cx='200' cy='215' >
+        <animate attributeName='r' values='2;4;2' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='240' cy='213' >
+        <animate attributeName='r' values='3;4.5;3' dur='2s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='263' cy='223' >
+        <animate attributeName='r' values='2;4;2' dur='3s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='290' cy='235' >
+        <animate attributeName='r' values='3;4.5;3' dur='1s' repeatCount='indefinite' />
+      </circle>  
+      <circle cx='360' cy='240' >
+        <animate attributeName='r' values='3.5;5;3.5' dur='2s' repeatCount='indefinite' />
+      </circle>
+      <circle cx='345' cy='275' >
+        <animate attributeName='r' values='2.5;4;2.5' dur='1s' repeatCount='indefinite' />
+      </circle>    
+      <circle cx='295' cy='268' >
+        <animate attributeName='r' values='2.5;4;2.5' dur='3s' repeatCount='indefinite' />
+      </circle>
+    </g>
+
+</svg>
