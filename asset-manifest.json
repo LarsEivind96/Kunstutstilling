@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kunstutstilling/static/css/main.df8c0b2c.chunk.css",
-    "main.js": "/kunstutstilling/static/js/main.38048bba.chunk.js",
-    "main.js.map": "/kunstutstilling/static/js/main.38048bba.chunk.js.map",
+    "main.css": "/kunstutstilling/static/css/main.450df322.chunk.css",
+    "main.js": "/kunstutstilling/static/js/main.c0abf306.chunk.js",
+    "main.js.map": "/kunstutstilling/static/js/main.c0abf306.chunk.js.map",
     "runtime-main.js": "/kunstutstilling/static/js/runtime-main.939af24b.js",
     "runtime-main.js.map": "/kunstutstilling/static/js/runtime-main.939af24b.js.map",
-    "static/js/2.da46f3f2.chunk.js": "/kunstutstilling/static/js/2.da46f3f2.chunk.js",
-    "static/js/2.da46f3f2.chunk.js.map": "/kunstutstilling/static/js/2.da46f3f2.chunk.js.map",
+    "static/js/2.c6f9975b.chunk.js": "/kunstutstilling/static/js/2.c6f9975b.chunk.js",
+    "static/js/2.c6f9975b.chunk.js.map": "/kunstutstilling/static/js/2.c6f9975b.chunk.js.map",
     "index.html": "/kunstutstilling/index.html",
-    "precache-manifest.a211677da8ff60b62b7b369f8058f76a.js": "/kunstutstilling/precache-manifest.a211677da8ff60b62b7b369f8058f76a.js",
+    "precache-manifest.676b90daca8bf797abe85a02ba3f3269.js": "/kunstutstilling/precache-manifest.676b90daca8bf797abe85a02ba3f3269.js",
     "service-worker.js": "/kunstutstilling/service-worker.js",
-    "static/css/main.df8c0b2c.chunk.css.map": "/kunstutstilling/static/css/main.df8c0b2c.chunk.css.map",
-    "static/js/2.da46f3f2.chunk.js.LICENSE.txt": "/kunstutstilling/static/js/2.da46f3f2.chunk.js.LICENSE.txt",
+    "static/css/main.450df322.chunk.css.map": "/kunstutstilling/static/css/main.450df322.chunk.css.map",
+    "static/js/2.c6f9975b.chunk.js.LICENSE.txt": "/kunstutstilling/static/js/2.c6f9975b.chunk.js.LICENSE.txt",
     "static/media/Car.svg": "/kunstutstilling/static/media/Car.82f07154.svg",
     "static/media/CornfieldChase.mp3": "/kunstutstilling/static/media/CornfieldChase.6fc4514e.mp3",
     "static/media/DayOne.mp3": "/kunstutstilling/static/media/DayOne.cb70d3f1.mp3",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.939af24b.js",
-    "static/js/2.da46f3f2.chunk.js",
-    "static/css/main.df8c0b2c.chunk.css",
-    "static/js/main.38048bba.chunk.js"
+    "static/js/2.c6f9975b.chunk.js",
+    "static/css/main.450df322.chunk.css",
+    "static/js/main.c0abf306.chunk.js"
   ]
 }
