@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/kunstutstilling/static/css/main.df8c0b2c.chunk.css",
-    "main.js": "/kunstutstilling/static/js/main.99b85c20.chunk.js",
-    "main.js.map": "/kunstutstilling/static/js/main.99b85c20.chunk.js.map",
+    "main.js": "/kunstutstilling/static/js/main.38048bba.chunk.js",
+    "main.js.map": "/kunstutstilling/static/js/main.38048bba.chunk.js.map",
     "runtime-main.js": "/kunstutstilling/static/js/runtime-main.939af24b.js",
     "runtime-main.js.map": "/kunstutstilling/static/js/runtime-main.939af24b.js.map",
     "static/js/2.da46f3f2.chunk.js": "/kunstutstilling/static/js/2.da46f3f2.chunk.js",
     "static/js/2.da46f3f2.chunk.js.map": "/kunstutstilling/static/js/2.da46f3f2.chunk.js.map",
     "index.html": "/kunstutstilling/index.html",
-    "precache-manifest.30139ccab9bfb442abeabfa61d9147ed.js": "/kunstutstilling/precache-manifest.30139ccab9bfb442abeabfa61d9147ed.js",
+    "precache-manifest.a211677da8ff60b62b7b369f8058f76a.js": "/kunstutstilling/precache-manifest.a211677da8ff60b62b7b369f8058f76a.js",
     "service-worker.js": "/kunstutstilling/service-worker.js",
     "static/css/main.df8c0b2c.chunk.css.map": "/kunstutstilling/static/css/main.df8c0b2c.chunk.css.map",
     "static/js/2.da46f3f2.chunk.js.LICENSE.txt": "/kunstutstilling/static/js/2.da46f3f2.chunk.js.LICENSE.txt",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.939af24b.js",
     "static/js/2.da46f3f2.chunk.js",
     "static/css/main.df8c0b2c.chunk.css",
-    "static/js/main.99b85c20.chunk.js"
+    "static/js/main.38048bba.chunk.js"
   ]
 }
