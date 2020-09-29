@@ -3,6 +3,7 @@ import React from "react";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import "./Toolbar.css";
 import { ThemeContext } from "../../constants/Themes";
+import { Link } from "react-router-dom";
 
 const toolbar = (props: any) => (
   <ThemeContext.Consumer>
@@ -24,27 +25,27 @@ const toolbar = (props: any) => (
               <DrawerToggleButton click={props.drawerClickHandler} textColor={appContext.theme.text} />
             </div>
             <div className="toolbar__logo">
-              <a href="/" style={{ color: appContext.theme.text }}>
+              <Link to="/" style={{ color: appContext.theme.text }}>
                 WELCOME
-              </a>
+              </Link>
             </div>
             <div className="spacer" />
             <div className="toolbar_navigation-items">
               <ul>
                 <li>
-                  <a className="navLink" href="/" style={{ color: appContext.theme.text }}>
+                  <Link className="navLink" to="/" style={{ color: appContext.theme.text }}>
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="navLink" href="/gallery" style={{ color: appContext.theme.text }}>
+                  <Link className="navLink" to="/gallery" style={{ color: appContext.theme.text }}>
                     Gallery
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="navLink" href="/favorites" style={{ color: appContext.theme.text }}>
+                  <Link className="navLink" to="/favorites" style={{ color: appContext.theme.text }}>
                     Favorites
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

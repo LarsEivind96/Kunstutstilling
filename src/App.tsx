@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
@@ -32,29 +32,29 @@ function App() {
 
   return (
     <ThemeContext.Provider value={context}>
-      <div
-        className="App"
-        style={{
-          background: context.theme.bgImage,
-        }}
-      >
-        <Toolbar drawerClickHandler={drawerToggleClickHandler} />
-        <SideDrawer show={sideDrawerOpen} />
-        {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
-        <div className="moodContainer">
-          <ThemeButtonContainer />
-        </div>
-        <AudioPlayer />
-        <Router>
+      <Router>
+        <div
+          className="App"
+          style={{
+            background: context.theme.bgImage,
+          }}
+        >
+          <Toolbar drawerClickHandler={drawerToggleClickHandler} />
+          <SideDrawer show={sideDrawerOpen} />
+          {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
+          <div className="moodContainer">
+            <ThemeButtonContainer />
+          </div>
+          <AudioPlayer />
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/gallery" component={Gallery} />
-            <Route path="/favorites" component={Favorites} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/gallery" component={Gallery} />
+            <Route exact path="/favorites" component={Favorites} />
             {/* Make sure this route is at the bottom */}
-            <Route path="/:index" exact component={Home} />
+            <Route exact path="/:index" component={Home} />
           </Switch>
-        </Router>
-      </div>
+        </div>
+      </Router>
     </ThemeContext.Provider>
   );
 }

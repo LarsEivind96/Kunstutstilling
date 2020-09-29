@@ -3,6 +3,7 @@ import "./SideDrawer.css";
 import { ThemeContext } from "../../constants/Themes";
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
 import ThemeButtonContainer from "../ThemeButton/ThemeButtonContainer";
+import { Link } from "react-router-dom";
 
 const sideDrawer = (props: any) => {
   let drawerClasses = "side-drawer";
@@ -26,19 +27,19 @@ const sideDrawer = (props: any) => {
           >
             <ul>
               <li>
-                <a href="/" style={{ color: appContext.theme.text }}>
+                <Link className="navLink" to="/" style={{ color: appContext.theme.text }}>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/gallery" style={{ color: appContext.theme.text }}>
+                <Link className="navLink" to="/gallery" style={{ color: appContext.theme.text }}>
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/favorites" style={{ color: appContext.theme.text }}>
+                <Link className="navLink" to="/favorites" style={{ color: appContext.theme.text }}>
                   Favorites
-                </a>
+                </Link>
               </li>
               <li>
                 <div className="moodContainer2">
