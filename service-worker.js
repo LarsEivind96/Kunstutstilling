@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kunstutstilling/precache-manifest.6618289a1370ba4797556867a87ee9cb.js"
+  "/kunstutstilling/precache-manifest.e5fda9fe1da2bf0c5588e9a5a1fa1218.js"
 );
 
 self.addEventListener('message', (event) => {

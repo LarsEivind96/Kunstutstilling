@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f439bb2c2d7503fe1ee5bce8acfa45be",
+    "revision": "fa02c7d8c5b815820bd8297077059e9c",
     "url": "/kunstutstilling/index.html"
   },
   {
-    "revision": "8ace132a39417bccb8d4",
+    "revision": "31d95df106183e916aee",
     "url": "/kunstutstilling/static/css/main.df8c0b2c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kunstutstilling/static/js/2.65955387.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ace132a39417bccb8d4",
-    "url": "/kunstutstilling/static/js/main.5820c161.chunk.js"
+    "revision": "31d95df106183e916aee",
+    "url": "/kunstutstilling/static/js/main.689582f3.chunk.js"
   },
   {
     "revision": "05adb981fa85662e39db",
