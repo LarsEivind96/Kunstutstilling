@@ -14,6 +14,7 @@ function ThemeButton(props: props) {
           <div>
             <button
               id="button"
+              style={{ color: appContext.theme.text, backgroundColor: appContext.theme.secondary }}
               onClick={() => {
                 appContext.toggleTheme(props.theme);
                 sessionStorage.setItem("theme", JSON.stringify(props.theme));
@@ -27,19 +28,5 @@ function ThemeButton(props: props) {
     </ThemeContext.Consumer>
   );
 }
-/*
-class ThemeButton extends React.Component<props, {}> {
-  render() {
-    let props = this.props;
-    let theme = this.context;
-    return (
-      <div className="ThemeButton">
-        <button id="button" {...props} style={{ backgroundColor: theme.primary }} />
-      </div>
-    );
-  }
-}
-ThemeButton.contextType = ThemeContext;
-*/
 
 export default ThemeButton;

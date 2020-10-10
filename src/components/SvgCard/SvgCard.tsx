@@ -12,6 +12,7 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
   // Fetch poetry
   const [isLoading, setIsLoading] = useState(true);
   const [fetchedText, setFetchedText] = useState([]);
+  const [title, setTitle] = useState<string>();
 
   const fetchPoetry = async () => {
     setIsLoading(true);
@@ -19,6 +20,8 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
       .then((res) => res.json())
       .then(
         (result) => {
+          console.log(result);
+          setTitle(result[0].title);
           setFetchedText(result[0].lines.reduce((prev, curr, index) => [prev, <br key={index} />, curr]));
         },
         (error) => {
@@ -49,8 +52,8 @@ const SvgCard = ({ currentSvg, changeSvg }: Props) => {
               </div>
               <div className="TextContainer" style={{ background: appContext.theme.secondary }}>
                 <div className="ImageText" style={{ color: appContext.theme.text }}>
-                  <h1>{currentSvg.name}</h1>
                   {isLoading && <p> Fetching poetry... </p>}
+                  {!isLoading && <h1>{title}</h1>}
                   {!isLoading && <p> {fetchedText}</p>}
                 </div>
               </div>

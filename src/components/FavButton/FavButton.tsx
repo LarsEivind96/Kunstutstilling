@@ -32,7 +32,7 @@ class FavButton extends React.Component<ButtonProps, ButtonState> {
   render() {
     let buttonColor;
     if (localStorage.getItem("favorite")?.includes(this.props.index)) {
-      buttonColor = "red";
+      buttonColor = "gold";
     }
     return (
       <button
@@ -42,7 +42,7 @@ class FavButton extends React.Component<ButtonProps, ButtonState> {
         onClick={this.saveFavorite}
         style={{ color: buttonColor }}
       >
-        &#10084;
+        &#9733;
       </button>
     );
   }
